@@ -3,113 +3,533 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gym Coach</title>
+  <meta name="description" content="AirPay — Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes in Southeast Asia." />
+  <title>AirPay — Leading Digital Financial Services in Southeast Asia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="app-header">
-    <div class="brand">
-      <h1>Gym Coach</h1>
-      <p>Your mobile-friendly training, weight, and meal tracker.</p>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <img src="logo.png" alt="AirPay" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="logo-svg-fallback">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:38px;height:38px">
+            <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+            <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+            <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+          <span style="font-size:19px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+        </span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            Products
+            <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#">Solutions for SME</a>
+            <a href="#">Solutions for Enterprise</a>
+            <a href="#">Payment Method Options</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            About
+            <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#">About AirPay</a>
+            <a href="#">Why AirPay</a>
+            <a href="#">License and Security Standard</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Pricing</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">
+            Resources
+            <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#">FAQ</a>
+            <a href="#">API Docs</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Sales Inquiry</a>
+      </div>
+
+      <div class="nav-actions" id="navActions">
+        <a href="#" class="btn-login">Log in</a>
+        <a href="#" class="btn-demo">Demo Mode</a>
+        <a href="#" class="btn-register">Register Now</a>
+        <div class="lang-selector">
+          <svg class="globe-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"/>
+          </svg>
+          <span>EN</span>
+          <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
-    <section class="card">
-      <h2>Profile & Program</h2>
-      <form id="profileForm" class="form-grid">
-        <label>
-          Name
-          <input id="nameInput" type="text" placeholder="Your name" />
-        </label>
-        <label>
-          Goal
-          <select id="goalInput">
-            <option value="strength">Strength</option>
-            <option value="hypertrophy">Hypertrophy</option>
-            <option value="endurance">Endurance</option>
-          </select>
-        </label>
-        <label>
-          Equipment
-          <select id="equipmentInput">
-            <option value="bodyweight">Bodyweight</option>
-            <option value="dumbbells">Dumbbells</option>
-            <option value="barbell">Barbell</option>
-            <option value="machines">Machines</option>
-          </select>
-        </label>
-        <label>
-          Days / Week
-          <input id="daysInput" type="number" min="1" max="7" value="3" />
-        </label>
-        <button type="submit" class="btn-primary">Save & Generate Program</button>
-      </form>
-      <div id="profileSummary" class="summary"></div>
-      <div id="programContainer" class="program"></div>
-    </section>
-
-    <section class="card">
-      <h2>Track Body Weight</h2>
-      <form id="weightForm" class="inline-form">
-        <input id="weightInput" type="number" step="0.1" min="20" placeholder="Weight (kg)" />
-        <input id="weightDate" type="date" />
-        <button type="submit" class="btn-secondary">Add Weight</button>
-      </form>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Weight (kg)</th>
-            </tr>
-          </thead>
-          <tbody id="weightTableBody"></tbody>
-        </table>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Leading Digital Financial Services in Southeast Asia</h1>
+        <p class="hero-subtitle">Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn-primary">
+            Sales Inquiry
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="#" class="btn-outline-hero">Register Now</a>
+        </div>
       </div>
-    </section>
 
-    <section class="card">
-      <h2>Meal Plan Tracker</h2>
-      <form id="mealForm" class="form-grid">
-        <label>
-          Meal Description
-          <input id="mealInput" type="text" placeholder="Breakfast, Lunch, Snack" />
-        </label>
-        <label>
-          Calories
-          <input id="caloriesInput" type="number" min="0" placeholder="Calories" />
-        </label>
-        <label>
-          Notes
-          <input id="notesInput" type="text" placeholder="Protein, carbs, comments" />
-        </label>
-        <label>
-          Date
-          <input id="mealDate" type="date" />
-        </label>
-        <button type="submit" class="btn-primary">Add Meal</button>
-      </form>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Meal</th>
-              <th>Calories</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody id="mealTableBody"></tbody>
-        </table>
+      <div class="hero-illustration">
+        <svg viewBox="0 0 520 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+          <defs>
+            <linearGradient id="monGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2563EB"/>
+              <stop offset="100%" stop-color="#1D4ED8"/>
+            </linearGradient>
+            <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1E40AF"/>
+              <stop offset="100%" stop-color="#1D4ED8"/>
+            </linearGradient>
+            <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1D4ED8"/>
+              <stop offset="100%" stop-color="#3B82F6"/>
+            </linearGradient>
+            <filter id="fShadow" x="-15%" y="-15%" width="130%" height="140%">
+              <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="rgba(29,78,216,0.18)"/>
+            </filter>
+            <filter id="fFloat" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.10)"/>
+            </filter>
+          </defs>
+
+          <!-- Background blobs -->
+          <circle cx="420" cy="70" r="90" fill="#DBEAFE" opacity="0.35"/>
+          <circle cx="90" cy="310" r="65" fill="#EFF6FF" opacity="0.5"/>
+
+          <!-- Decorative dots -->
+          <circle cx="52" cy="55" r="3.5" fill="#BFDBFE" opacity="0.7"/>
+          <circle cx="72" cy="75" r="2.5" fill="#93C5FD" opacity="0.5"/>
+          <circle cx="58" cy="95" r="2" fill="#BFDBFE" opacity="0.5"/>
+          <circle cx="455" cy="310" r="3.5" fill="#BFDBFE" opacity="0.7"/>
+          <circle cx="472" cy="290" r="2.5" fill="#93C5FD" opacity="0.5"/>
+          <circle cx="468" cy="330" r="2" fill="#BFDBFE" opacity="0.5"/>
+          <circle cx="480" cy="80" r="2" fill="#93C5FD" opacity="0.4"/>
+          <circle cx="495" cy="100" r="3" fill="#BFDBFE" opacity="0.5"/>
+
+          <!-- Base shadow -->
+          <ellipse cx="265" cy="352" rx="195" ry="18" fill="#DBEAFE" opacity="0.4"/>
+
+          <!-- Credit Card -->
+          <g transform="rotate(-12 145 235)" filter="url(#fFloat)">
+            <rect x="78" y="200" width="148" height="92" rx="11" fill="url(#cardGrad)"/>
+            <rect x="89" y="220" width="44" height="30" rx="5" fill="#FCD34D"/>
+            <line x1="92" y1="224" x2="130" y2="224" stroke="rgba(255,185,0,0.5)" stroke-width="1.5"/>
+            <line x1="92" y1="229" x2="130" y2="229" stroke="rgba(255,185,0,0.5)" stroke-width="1.5"/>
+            <line x1="92" y1="234" x2="130" y2="234" stroke="rgba(255,185,0,0.5)" stroke-width="1.5"/>
+            <line x1="92" y1="239" x2="130" y2="239" stroke="rgba(255,185,0,0.5)" stroke-width="1.5"/>
+            <rect x="89" y="262" width="96" height="5" rx="2.5" fill="rgba(255,255,255,0.35)"/>
+            <rect x="89" y="272" width="72" height="5" rx="2.5" fill="rgba(255,255,255,0.25)"/>
+            <path d="M178 228 Q185 220 192 228" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M181 232 Q185 225 189 232" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <circle cx="185" cy="236" r="2" fill="white"/>
+          </g>
+
+          <!-- Monitor -->
+          <g filter="url(#fShadow)">
+            <rect x="158" y="82" width="216" height="172" rx="13" fill="url(#monGrad)"/>
+            <rect x="169" y="93" width="194" height="148" rx="9" fill="#1E3A8A"/>
+            <!-- Header -->
+            <rect x="178" y="102" width="85" height="7" rx="3.5" fill="#3B82F6"/>
+            <rect x="274" y="104" width="28" height="3" rx="1.5" fill="#60A5FA" opacity="0.6"/>
+            <rect x="308" y="104" width="28" height="3" rx="1.5" fill="#60A5FA" opacity="0.6"/>
+            <!-- Balance card -->
+            <rect x="178" y="116" width="86" height="54" rx="7" fill="#2563EB"/>
+            <rect x="186" y="124" width="42" height="4" rx="2" fill="#93C5FD" opacity="0.7"/>
+            <rect x="186" y="132" width="62" height="9" rx="4" fill="white"/>
+            <rect x="186" y="145" width="52" height="4" rx="2" fill="#60A5FA" opacity="0.6"/>
+            <rect x="186" y="154" width="38" height="9" rx="4" fill="#34D399"/>
+            <!-- Stats card -->
+            <rect x="272" y="116" width="84" height="54" rx="7" fill="#2563EB"/>
+            <rect x="280" y="124" width="50" height="4" rx="2" fill="#93C5FD" opacity="0.7"/>
+            <rect x="280" y="132" width="40" height="9" rx="4" fill="white"/>
+            <polyline points="280,162 292,155 305,158 318,150 330,153 343,146 348,148" stroke="#60A5FA" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Bar chart -->
+            <rect x="178" y="178" width="178" height="58" rx="7" fill="#1E3A8A"/>
+            <rect x="189" y="192" width="16" height="28" rx="3" fill="#3B82F6"/>
+            <rect x="211" y="184" width="16" height="36" rx="3" fill="#60A5FA"/>
+            <rect x="233" y="188" width="16" height="32" rx="3" fill="#3B82F6"/>
+            <rect x="255" y="180" width="16" height="40" rx="3" fill="#60A5FA"/>
+            <rect x="277" y="186" width="16" height="34" rx="3" fill="#93C5FD"/>
+            <rect x="299" y="192" width="16" height="28" rx="3" fill="#3B82F6"/>
+            <rect x="321" y="183" width="16" height="37" rx="3" fill="#60A5FA"/>
+            <!-- Stand -->
+            <rect x="248" y="254" width="36" height="16" rx="5" fill="#1D4ED8"/>
+            <rect x="233" y="268" width="66" height="10" rx="5" fill="#1E40AF"/>
+          </g>
+
+          <!-- Phone -->
+          <g filter="url(#fShadow)">
+            <rect x="346" y="118" width="82" height="152" rx="15" fill="url(#phoneGrad)"/>
+            <rect x="355" y="132" width="64" height="120" rx="9" fill="#2563EB"/>
+            <rect x="372" y="126" width="30" height="9" rx="4.5" fill="#1E40AF"/>
+            <!-- Phone UI -->
+            <rect x="363" y="142" width="48" height="6" rx="3" fill="#93C5FD" opacity="0.8"/>
+            <rect x="363" y="153" width="34" height="4" rx="2" fill="#60A5FA" opacity="0.6"/>
+            <!-- AirPay logo on phone -->
+            <circle cx="387" cy="188" r="22" fill="#1D4ED8"/>
+            <circle cx="387" cy="188" r="16" fill="#1E3A8A"/>
+            <path d="M381 195L387 181L393 195H390L387 188L384 195H381Z" fill="white"/>
+            <!-- Check overlay -->
+            <circle cx="401" cy="174" r="9" fill="#22C55E"/>
+            <path d="M397 174L400 177L405 171" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Amount label -->
+            <rect x="363" y="218" width="48" height="7" rx="3.5" fill="#60A5FA" opacity="0.5"/>
+            <!-- Pay button -->
+            <rect x="363" y="230" width="48" height="20" rx="10" fill="#3B82F6"/>
+            <text x="387" y="244" text-anchor="middle" fill="white" font-size="8.5" font-family="Inter,sans-serif" font-weight="600">Pay Now</text>
+            <!-- Home bar -->
+            <rect x="374" y="246" width="26" height="3" rx="1.5" fill="#3B82F6" opacity="0.4"/>
+          </g>
+
+          <!-- Floating badge: green check -->
+          <g filter="url(#fFloat)">
+            <circle cx="132" cy="96" r="27" fill="white"/>
+            <circle cx="132" cy="96" r="19" fill="#DCFCE7"/>
+            <path d="M123 96L129 102L141 89" stroke="#16A34A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <!-- Floating badge: shield -->
+          <g filter="url(#fFloat)">
+            <circle cx="446" cy="168" r="27" fill="white"/>
+            <path d="M446 155L437 158.8L437 165.5C437 171.5 441 176.8 446 178.5C451 176.8 455 171.5 455 165.5L455 158.8Z" fill="#DBEAFE"/>
+            <path d="M446 155L437 158.8L437 165.5C437 171.5 441 176.8 446 178.5C451 176.8 455 171.5 455 165.5L455 158.8Z" fill="#1D4ED8" opacity="0.85"/>
+            <path d="M442 166L445 169L451 162" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <!-- Floating badge: dollar -->
+          <g filter="url(#fFloat)">
+            <circle cx="448" cy="268" r="24" fill="white"/>
+            <text x="448" y="277" text-anchor="middle" fill="#1D4ED8" font-size="22" font-weight="800" font-family="Inter,sans-serif">$</text>
+          </g>
+
+          <!-- Connector lines -->
+          <line x1="158" y1="96" x2="118" y2="96" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="346" y1="168" x2="420" y2="168" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="390" y1="265" x2="425" y2="268" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="4 3"/>
+        </svg>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- ===== FEATURES ===== -->
+  <section class="features">
+    <div class="features-container">
+      <div class="feature-card">
+        <div class="feature-icon icon-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Secure &amp; Compliant</h3>
+          <p>Industry-standard security and compliance</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Fast &amp; Reliable</h3>
+          <p>High uptime and fast transaction processing</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Multiple Payment Options</h3>
+          <p>Support for cards, e-wallets, and more</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 010 2.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Local Support</h3>
+          <p>Dedicated support for your business needs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEA GROUP ===== -->
+  <section class="sea-group">
+    <div class="sea-group-container">
+      <div class="sea-group-content">
+        <h2>AirPay is part of Sea Group</h2>
+        <p class="sea-subtitle">The leading tech company in the region</p>
+        <ul class="sea-list">
+          <li>
+            <svg class="check-ic" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Wide range of financial services, offers consumer and SME credit, mobile wallet, banking and insurtech services
+          </li>
+          <li>
+            <svg class="check-ic" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Integrated with the biggest e-commerce ecosystem drives significant organic traffic, high quality data insights and low transaction costs
+          </li>
+          <li>
+            <svg class="check-ic" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Pan-regional infrastructure with a proven track record of navigating complex licensing and regulatory environments
+          </li>
+          <li>
+            <svg class="check-ic" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Large captive online user base, covering both individuals and SMEs with hyper growth
+          </li>
+        </ul>
+      </div>
+
+      <div class="sea-map-wrap">
+        <svg viewBox="0 0 540 330" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecosystem-svg">
+
+          <!-- Dotted SEA map -->
+          <g opacity="0.2" fill="#64748B">
+            <circle cx="222" cy="100" r="2.2"/><circle cx="232" cy="94" r="2.2"/><circle cx="242" cy="97" r="2.2"/>
+            <circle cx="226" cy="110" r="2.2"/><circle cx="236" cy="112" r="2.2"/>
+            <circle cx="229" cy="122" r="2.2"/><circle cx="222" cy="132" r="2.2"/>
+            <circle cx="225" cy="142" r="2.2"/><circle cx="220" cy="153" r="2.2"/>
+            <circle cx="218" cy="163" r="2.2"/>
+            <circle cx="268" cy="86" r="2.2"/><circle cx="275" cy="93" r="2.2"/>
+            <circle cx="272" cy="103" r="2.2"/><circle cx="278" cy="113" r="2.2"/>
+            <circle cx="280" cy="123" r="2.2"/><circle cx="275" cy="133" r="2.2"/>
+            <circle cx="280" cy="143" r="2.2"/><circle cx="285" cy="153" r="2.2"/>
+            <circle cx="282" cy="163" r="2.2"/>
+            <circle cx="208" cy="88" r="2.2"/><circle cx="215" cy="80" r="2.2"/>
+            <circle cx="210" cy="70" r="2.2"/><circle cx="207" cy="50" r="2.2"/>
+            <circle cx="252" cy="110" r="2.2"/><circle cx="258" cy="120" r="2.2"/>
+            <circle cx="240" cy="185" r="2.2"/><circle cx="248" cy="192" r="2.2"/>
+            <circle cx="244" cy="200" r="2.2"/><circle cx="240" cy="210" r="2.2"/>
+            <circle cx="318" cy="155" r="2.2"/><circle cx="330" cy="150" r="2.2"/>
+            <circle cx="342" cy="148" r="2.2"/><circle cx="354" cy="152" r="2.2"/>
+            <circle cx="322" cy="165" r="2.2"/><circle cx="334" cy="162" r="2.2"/>
+            <circle cx="346" cy="160" r="2.2"/><circle cx="358" cy="162" r="2.2"/>
+            <circle cx="326" cy="175" r="2.2"/><circle cx="338" cy="172" r="2.2"/>
+            <circle cx="350" cy="170" r="2.2"/>
+            <circle cx="338" cy="102" r="2.2"/><circle cx="346" cy="108" r="2.2"/>
+            <circle cx="343" cy="118" r="2.2"/><circle cx="336" cy="124" r="2.2"/>
+            <circle cx="348" cy="128" r="2.2"/><circle cx="353" cy="138" r="2.2"/>
+            <circle cx="264" cy="188" r="2.2"/><circle cx="276" cy="185" r="2.2"/>
+            <circle cx="288" cy="183" r="2.2"/><circle cx="300" cy="186" r="2.2"/>
+            <circle cx="268" cy="198" r="2.2"/><circle cx="280" cy="195" r="2.2"/>
+            <circle cx="293" cy="225" r="2.2"/><circle cx="308" cy="222" r="2.2"/>
+            <circle cx="323" cy="224" r="2.2"/><circle cx="338" cy="222" r="2.2"/>
+            <circle cx="300" cy="232" r="2.2"/><circle cx="315" cy="230" r="2.2"/>
+            <circle cx="374" cy="165" r="2.2"/><circle cx="380" cy="173" r="2.2"/>
+            <circle cx="394" cy="198" r="2.2"/><circle cx="406" cy="196" r="2.2"/>
+          </g>
+
+          <!-- Left brands -->
+          <g>
+            <rect x="32" y="68" width="110" height="38" rx="19" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+            <circle cx="57" cy="87" r="13" fill="#EE4D2D"/>
+            <path d="M51 91 Q57 83 63 91" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <circle cx="57" cy="91" r="2.2" fill="white"/>
+            <text x="108" y="92" text-anchor="middle" fill="#111827" font-size="11" font-family="Inter,sans-serif" font-weight="600">Shopee</text>
+          </g>
+          <g>
+            <rect x="32" y="146" width="110" height="38" rx="19" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+            <circle cx="57" cy="165" r="13" fill="#FF5A00"/>
+            <text x="57" y="169.5" text-anchor="middle" fill="white" font-size="11.5" font-family="Inter,sans-serif" font-weight="700">G</text>
+            <text x="108" y="170" text-anchor="middle" fill="#111827" font-size="11" font-family="Inter,sans-serif" font-weight="600">Garena</text>
+          </g>
+          <g>
+            <rect x="32" y="224" width="110" height="38" rx="19" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+            <circle cx="57" cy="243" r="13" fill="#1D4ED8"/>
+            <path d="M51 249L57 237L63 249H60L57 243L54 249H51Z" fill="white"/>
+            <text x="108" y="248" text-anchor="middle" fill="#111827" font-size="11" font-family="Inter,sans-serif" font-weight="600">AirPay</text>
+          </g>
+
+          <!-- Sea center -->
+          <circle cx="296" cy="165" r="44" fill="#EFF6FF"/>
+          <circle cx="296" cy="165" r="35" fill="#DBEAFE"/>
+          <circle cx="296" cy="165" r="27" fill="white" stroke="#BFDBFE" stroke-width="2"/>
+          <text x="296" y="161" text-anchor="middle" fill="#1D4ED8" font-size="13" font-family="Inter,sans-serif" font-weight="800">sea</text>
+          <path d="M278 167 Q296 175 314 167" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+          <!-- Right brands -->
+          <g>
+            <rect x="398" y="68" width="116" height="38" rx="19" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+            <circle cx="423" cy="87" r="13" fill="#EE4D2D"/>
+            <text x="423" y="91.5" text-anchor="middle" fill="white" font-size="8" font-family="Inter,sans-serif" font-weight="700">SM</text>
+            <text x="469" y="92" text-anchor="middle" fill="#111827" font-size="11" font-family="Inter,sans-serif" font-weight="600">seaMoney</text>
+          </g>
+          <g>
+            <rect x="398" y="146" width="116" height="38" rx="19" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+            <circle cx="423" cy="165" r="13" fill="#FF8C00"/>
+            <text x="423" y="169.5" text-anchor="middle" fill="white" font-size="8" font-family="Inter,sans-serif" font-weight="700">SP</text>
+            <text x="469" y="170" text-anchor="middle" fill="#111827" font-size="11" font-family="Inter,sans-serif" font-weight="600">SPayLater</text>
+          </g>
+          <g>
+            <rect x="398" y="224" width="116" height="38" rx="19" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+            <circle cx="423" cy="243" r="13" fill="#2563EB"/>
+            <text x="423" y="247.5" text-anchor="middle" fill="white" font-size="8" font-family="Inter,sans-serif" font-weight="700">SB</text>
+            <text x="469" y="248" text-anchor="middle" fill="#111827" font-size="11" font-family="Inter,sans-serif" font-weight="600">SeaBank</text>
+          </g>
+
+          <!-- Left connectors -->
+          <line x1="142" y1="87" x2="253" y2="152" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="142" y1="165" x2="269" y2="165" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="142" y1="243" x2="253" y2="178" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <!-- Right connectors -->
+          <line x1="323" y1="152" x2="398" y2="87" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="323" y1="165" x2="398" y2="165" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="323" y1="178" x2="398" y2="243" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <!-- Arrow heads -->
+          <polygon points="395,84 399,87 395,90" fill="#93C5FD"/>
+          <polygon points="395,162 399,165 395,168" fill="#93C5FD"/>
+          <polygon points="395,240 399,243 395,246" fill="#93C5FD"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>Saved locally in your browser. Works on mobile and desktop.</p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <img src="logo.png" alt="AirPay" class="logo-img footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="logo-svg-fallback">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:34px;height:34px">
+              <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+              <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+              <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+            </svg>
+            <span style="font-size:17px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#">Solutions for SME</a></li>
+            <li><a href="#">Solutions for Enterprise</a></li>
+            <li><a href="#">Payment Method Options</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">About AirPay</a></li>
+            <li><a href="#">Why AirPay</a></li>
+            <li><a href="#">License and Security Standard</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">API Docs</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sales Inquiry</h4>
+          <ul>
+            <li><a href="#">Sales Inquiry Form</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Register Form</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <a href="mailto:contact@airpay.co.id" class="fc-row">
+                <svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                contact@airpay.co.id
+              </a>
+            </li>
+            <li>
+              <a href="tel:+622139500300" class="fc-row">
+                <svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                62 21 3950 0300
+              </a>
+            </li>
+            <li class="fc-row addr">
+              <svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              Sopo Del Office Tower &amp; Lifestyle, Lantai 11, Jl. Mega Kuningan Barat III Lot 10.1-6, Jakarta
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 AirPay. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

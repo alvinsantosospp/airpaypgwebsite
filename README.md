@@ -1,42 +1,38 @@
-# Gym Coach Web App
+# AirPay — Payment Gateway Website
 
-A responsive gym coach application built for mobile and desktop browsers. It stores data locally in your browser and supports:
+Static marketing website for AirPay, a digital payment gateway product of Sea Group operating in Southeast Asia.
 
-- Dynamic gym program generation based on goal, equipment, and weekly training days
-- Body weight tracking with date entries
-- Meal plan tracking with meal description, calories, and notes
-- Responsive layout for mobile and PC
+## Pages & Sections
 
-## Files
+- **Navbar** — sticky navigation with dropdown menus, Log in / Demo Mode / Register Now CTAs, language selector
+- **Hero** — headline, CTA buttons, isometric payment illustration (pure SVG, no external images)
+- **Features strip** — Secure & Compliant · Fast & Reliable · Multiple Payment Options · Local Support
+- **Sea Group** — company positioning, bullet points, interactive Sea ecosystem diagram (SVG)
+- **Footer** — Products · About · Resources · Sales Inquiry · Company · Contact Us columns
 
-- `index.html` — user interface
-- `styles.css` — responsive styling
-- `app.js` — data storage and interaction logic
-- `gym_coach.py` — command-line gym coach helper
-- `class GymCoach:.py` — example Python class for coach logic
+## Tech Stack
 
-## Run locally
+Pure HTML5 + CSS3 + vanilla JS. No build step, no dependencies, no external images — ready to deploy anywhere static files are served.
 
-Open `index.html` directly in a browser, or serve the project with a local static server:
+## Local preview
 
 ```bash
 python -m http.server 8000
+# or
+npx serve .
 ```
 
-Then visit:
+Then open `http://localhost:8000`.
 
-```bash
-http://localhost:8000
-```
+## Deploy to GitHub Pages
 
-## Usage
+1. Push this repo to GitHub
+2. Go to **Settings → Pages**
+3. Set source to `main` branch, `/ (root)`
+4. Your site will be live at `https://<username>.github.io/<repo>/`
 
-1. Enter your name, training goal, equipment, and days per week.
-2. Save to generate a dynamic weekly workout program.
-3. Log body weight entries.
-4. Track meal plans and calories.
+## Contact
 
-## Notes
-
-- Data is saved locally in the browser using `localStorage`.
-- The interface is designed to work on mobile and desktop devices.
+- Email: contact@airpay.co.id
+- Phone: 62 21 3950 0300
+- Address: Sopo Del Office Tower & Lifestyle, Lantai 11, Jl. Mega Kuningan Barat III Lot 10.1-6, Jakarta
