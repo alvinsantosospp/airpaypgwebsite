@@ -12,6 +12,7 @@ const actions = document.getElementById('navActions');
 toggle.addEventListener('click', () => {
   const isOpen = menu.classList.toggle('open');
   actions.classList.toggle('open', isOpen);
+  navbar.classList.toggle('menu-open', isOpen);
 
   const spans = toggle.querySelectorAll('span');
   if (isOpen) {
@@ -40,6 +41,7 @@ document.addEventListener('click', e => {
   if (!toggle.contains(e.target) && !menu.contains(e.target) && !actions.contains(e.target)) {
     menu.classList.remove('open');
     actions.classList.remove('open');
+    navbar.classList.remove('menu-open');
     const spans = toggle.querySelectorAll('span');
     spans[0].style.transform = '';
     spans[1].style.opacity   = '';
@@ -52,5 +54,6 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     menu.classList.remove('open');
     actions.classList.remove('open');
+    navbar.classList.remove('menu-open');
   }
 });
