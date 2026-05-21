@@ -331,6 +331,11 @@
 
       <div class="sea-map-wrap">
         <svg viewBox="0 0 540 330" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecosystem-svg">
+          <defs>
+            <clipPath id="circleClip">
+              <circle cx="296" cy="165" r="30"/>
+            </clipPath>
+          </defs>
 
           <!-- Dotted SEA map -->
           <g opacity="0.2" fill="#64748B">
@@ -389,12 +394,11 @@
             <text x="108" y="248" text-anchor="middle" fill="#111827" font-size="11" font-family="Inter,sans-serif" font-weight="600">AirPay</text>
           </g>
 
-          <!-- Sea center -->
+          <!-- Monee center -->
           <circle cx="296" cy="165" r="44" fill="#EFF6FF"/>
           <circle cx="296" cy="165" r="35" fill="#DBEAFE"/>
-          <circle cx="296" cy="165" r="27" fill="white" stroke="#BFDBFE" stroke-width="2"/>
-          <text x="296" y="161" text-anchor="middle" fill="#1D4ED8" font-size="13" font-family="Inter,sans-serif" font-weight="800">sea</text>
-          <path d="M278 167 Q296 175 314 167" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="296" cy="165" r="32" fill="white" stroke="#BFDBFE" stroke-width="2"/>
+          <image href="monee-logo.png" x="262" y="131" width="68" height="68" clip-path="url(#circleClip)"/>
 
           <!-- Right brands -->
           <g>
