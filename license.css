@@ -1,0 +1,141 @@
+/* ===== LICENSE PAGE STYLES ===== */
+
+/* Page header */
+.lic-header {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  padding: 100px 24px 60px;
+  text-align: center;
+  border-bottom: 1px solid #BFDBFE;
+}
+
+.lic-header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.lic-header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  color: #1E3A5F;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+.lic-header p {
+  font-size: 1.05rem;
+  color: #4B6A8A;
+  margin: 0;
+}
+
+/* Certifications section */
+.lic-section {
+  padding: 72px 24px 80px;
+  background: #fff;
+}
+
+.lic-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+/* Divider between columns */
+.lic-divider {
+  width: 1px;
+  background: #E2E8F0;
+  align-self: stretch;
+  min-height: 360px;
+  flex-shrink: 0;
+  margin: 0 40px;
+}
+
+/* Each column */
+.lic-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.lic-col-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #EFF6FF;
+}
+
+/* Individual cert item */
+.lic-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Logo containers */
+.lic-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 90px;
+}
+
+.lic-logo-svg {
+  width: 90px;
+  height: 90px;
+}
+
+.lic-logo-wide {
+  width: 180px;
+  height: auto;
+}
+
+/* Caption text under logo */
+.lic-caption {
+  font-size: 0.82rem;
+  color: #4B6A8A;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Active nav link highlight */
+.active-link {
+  color: #2196F3 !important;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .lic-container {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .lic-divider {
+    width: 100%;
+    height: 1px;
+    min-height: unset;
+    margin: 0;
+  }
+
+  .lic-col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .lic-header {
+    padding: 88px 20px 48px;
+  }
+
+  .lic-section {
+    padding: 48px 20px 60px;
+  }
+}

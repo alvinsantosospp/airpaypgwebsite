@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AirPay — Licensing, Compliance and Security Standards" />
+  <title>AirPay — Licensing, Compliance and Security Standards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="license.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="AirPay" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="logo-svg-fallback">
+          <svg viewBox="0 0 44 44" fill="none" style="width:38px;height:38px">
+            <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+            <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+            <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+          <span style="font-size:19px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+        </span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">Products <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">Solutions for SME</a>
+            <a href="#">Solutions for Enterprise</a>
+            <a href="#">Payment Method Options</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link active-nav">About <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">About AirPay</a>
+            <a href="#">Why AirPay</a>
+            <a href="license.html" class="active-link">License and Security Standard</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Pricing</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">Resources <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">FAQ</a>
+            <a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank" rel="noopener noreferrer">API Docs</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Sales Inquiry</a>
+      </div>
+
+      <div class="nav-actions" id="navActions">
+        <a href="#" class="btn-login">Log in</a>
+        <a href="https://shopeepay.co.id/merchant-demo" target="_blank" rel="noopener noreferrer" class="btn-demo">Demo Mode</a>
+        <a href="https://help.shopee.co.id/portal/survey/883dc85ec2584fb4941d2cc26aeb2e5a" target="_blank" rel="noopener noreferrer" class="btn-register">Register Now</a>
+        <div class="lang-selector">
+          <svg class="globe-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"/></svg>
+          <span>EN</span>
+          <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="lic-header">
+    <div class="lic-header-inner">
+      <h1>Licensing, Compliance and Security Standards</h1>
+      <p>Secure, reliable payment processing backed by compliance and certifications</p>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS GRID ===== -->
+  <section class="lic-section">
+    <div class="lic-container">
+
+      <!-- Column 1: Licensed & Registered -->
+      <div class="lic-col">
+        <h3 class="lic-col-title">Licensed &amp; registered with..</h3>
+
+        <div class="lic-item">
+          <div class="lic-logo-wrap">
+            <!-- Bank Indonesia -->
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="lic-logo-svg">
+              <circle cx="60" cy="60" r="56" fill="#1A3A6B" stroke="#1A3A6B" stroke-width="2"/>
+              <circle cx="60" cy="60" r="48" fill="none" stroke="white" stroke-width="1.5"/>
+              <!-- BI monogram -->
+              <text x="60" y="52" text-anchor="middle" fill="white" font-size="11" font-family="Inter,sans-serif" font-weight="400" letter-spacing="1">BANK</text>
+              <text x="60" y="68" text-anchor="middle" fill="white" font-size="26" font-family="Georgia,serif" font-weight="700">BI</text>
+              <text x="60" y="82" text-anchor="middle" fill="white" font-size="7.5" font-family="Inter,sans-serif" letter-spacing="0.5">INDONESIA</text>
+            </svg>
+          </div>
+          <p class="lic-caption">Bank Indonesia<br/>(Central Bank)</p>
+        </div>
+
+        <div class="lic-item">
+          <div class="lic-logo-wrap">
+            <!-- KOMDIGI pixel logo -->
+            <svg viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="lic-logo-wide">
+              <!-- Pixel blocks -->
+              <rect x="0" y="0" width="14" height="14" fill="#00AEEF"/>
+              <rect x="16" y="0" width="14" height="14" fill="#00AEEF"/>
+              <rect x="32" y="0" width="14" height="14" fill="#8DC63F"/>
+              <rect x="0" y="16" width="14" height="14" fill="#00AEEF"/>
+              <rect x="16" y="16" width="14" height="14" fill="#F7941D"/>
+              <rect x="32" y="16" width="14" height="14" fill="#8DC63F"/>
+              <rect x="0" y="32" width="14" height="14" fill="#8B1A1A"/>
+              <rect x="16" y="32" width="14" height="14" fill="#00AEEF"/>
+              <rect x="32" y="32" width="14" height="14" fill="#00AEEF"/>
+              <!-- KOMDIGI text -->
+              <text x="54" y="25" fill="#1A1A2E" font-size="18" font-family="Inter,sans-serif" font-weight="800" letter-spacing="1">KOMDIGI</text>
+              <text x="54" y="44" fill="#555" font-size="7.5" font-family="Inter,sans-serif" font-weight="400">Ministry of Communication</text>
+              <text x="54" y="55" fill="#555" font-size="7.5" font-family="Inter,sans-serif" font-weight="400">and Digital Affairs</text>
+            </svg>
+          </div>
+          <p class="lic-caption">Ministry of Communication and<br/>Digital Affairs</p>
+        </div>
+      </div>
+
+      <div class="lic-divider"></div>
+
+      <!-- Column 2: Certified & Compliant -->
+      <div class="lic-col">
+        <h3 class="lic-col-title">Certified &amp; compliant to..</h3>
+
+        <div class="lic-item">
+          <div class="lic-logo-wrap">
+            <!-- ISO 27001 badge -->
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="lic-logo-svg">
+              <circle cx="60" cy="60" r="56" fill="none" stroke="#1A5EA8" stroke-width="3"/>
+              <circle cx="60" cy="60" r="50" fill="none" stroke="#1A5EA8" stroke-width="1"/>
+              <!-- Arc text top -->
+              <path id="topArc" d="M 15 60 A 45 45 0 0 1 105 60" fill="none"/>
+              <text font-size="7" font-family="Inter,sans-serif" fill="#1A5EA8" font-weight="600">
+                <textPath href="#topArc" startOffset="5%">Information Security Management System</textPath>
+              </text>
+              <!-- ISO text -->
+              <text x="60" y="58" text-anchor="middle" fill="#1A5EA8" font-size="16" font-family="Inter,sans-serif" font-weight="800">ISO</text>
+              <text x="60" y="74" text-anchor="middle" fill="#1A5EA8" font-size="14" font-family="Inter,sans-serif" font-weight="700">27001</text>
+              <!-- Bottom text -->
+              <text x="60" y="92" text-anchor="middle" fill="#1A5EA8" font-size="8" font-family="Inter,sans-serif" font-weight="500" letter-spacing="1">Certified</text>
+              <!-- Globe icon -->
+              <circle cx="60" cy="34" r="6" fill="none" stroke="#1A5EA8" stroke-width="1.2"/>
+              <line x1="60" y1="28" x2="60" y2="40" stroke="#1A5EA8" stroke-width="0.8"/>
+              <line x1="54" y1="34" x2="66" y2="34" stroke="#1A5EA8" stroke-width="0.8"/>
+              <ellipse cx="60" cy="34" rx="3.5" ry="6" fill="none" stroke="#1A5EA8" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <p class="lic-caption">ISO 27001</p>
+        </div>
+
+        <div class="lic-item">
+          <div class="lic-logo-wrap">
+            <!-- PCI DSS badge -->
+            <svg viewBox="0 0 130 110" fill="none" xmlns="http://www.w3.org/2000/svg" class="lic-logo-svg" style="max-width:130px">
+              <!-- Shield shape -->
+              <path d="M65 5 L115 25 L115 65 C115 88 90 105 65 108 C40 105 15 88 15 65 L15 25 Z" fill="#1A7A5E"/>
+              <path d="M65 14 L108 32 L108 65 C108 84 86 99 65 102 C44 99 22 84 22 65 L22 32 Z" fill="#1D8F6E"/>
+              <!-- PCI text -->
+              <text x="65" y="55" text-anchor="middle" fill="white" font-size="24" font-family="Inter,sans-serif" font-weight="900" letter-spacing="-1">PCI</text>
+              <!-- Checkmark -->
+              <path d="M52 62 L60 72 L80 50" stroke="#7FD67F" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- DSS text -->
+              <text x="65" y="85" text-anchor="middle" fill="white" font-size="13" font-family="Inter,sans-serif" font-weight="700" letter-spacing="2">DSS</text>
+              <text x="65" y="98" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7" font-family="Inter,sans-serif" font-weight="500" letter-spacing="1">COMPLIANT</text>
+            </svg>
+          </div>
+          <p class="lic-caption">Payment Card Industry<br/>Data Security Standard</p>
+        </div>
+      </div>
+
+      <div class="lic-divider"></div>
+
+      <!-- Column 3: Member of -->
+      <div class="lic-col">
+        <h3 class="lic-col-title">Member of..</h3>
+
+        <div class="lic-item">
+          <div class="lic-logo-wrap">
+            <!-- ASPI logo -->
+            <svg viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="lic-logo-wide">
+              <!-- Three circles -->
+              <circle cx="28" cy="38" r="22" fill="#1A3E8C"/>
+              <circle cx="52" cy="28" r="18" fill="#2E7DD1"/>
+              <circle cx="52" cy="50" r="14" fill="#5BB3E8"/>
+              <!-- ASPI text -->
+              <text x="82" y="32" fill="#1A3E8C" font-size="28" font-family="Inter,sans-serif" font-weight="900" letter-spacing="1">ASPI</text>
+              <text x="82" y="50" fill="#333" font-size="8" font-family="Inter,sans-serif" font-weight="400">Asosiasi Sistem Pembayaran</text>
+              <text x="82" y="62" fill="#333" font-size="8" font-family="Inter,sans-serif" font-weight="400">Indonesia</text>
+            </svg>
+          </div>
+          <p class="lic-caption">Indonesian Payment System<br/>Association</p>
+        </div>
+
+        <div class="lic-item">
+          <div class="lic-logo-wrap">
+            <!-- Fintech Indonesia logo -->
+            <svg viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="lic-logo-wide">
+              <!-- Snowflake/gear icon -->
+              <g transform="translate(8,8)">
+                <circle cx="22" cy="22" r="10" fill="none" stroke="#2BA4DB" stroke-width="2.5"/>
+                <line x1="22" y1="4" x2="22" y2="40" stroke="#2BA4DB" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="4" y1="22" x2="40" y2="22" stroke="#2BA4DB" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="9" y1="9" x2="35" y2="35" stroke="#2BA4DB" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="35" y1="9" x2="9" y2="35" stroke="#2BA4DB" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Small circles at ends -->
+                <circle cx="22" cy="4" r="3" fill="#2BA4DB"/>
+                <circle cx="22" cy="40" r="3" fill="#2BA4DB"/>
+                <circle cx="4" cy="22" r="3" fill="#2BA4DB"/>
+                <circle cx="40" cy="22" r="3" fill="#2BA4DB"/>
+                <circle cx="9" cy="9" r="3" fill="#2BA4DB"/>
+                <circle cx="35" cy="9" r="3" fill="#2BA4DB"/>
+                <circle cx="9" cy="35" r="3" fill="#2BA4DB"/>
+                <circle cx="35" cy="35" r="3" fill="#2BA4DB"/>
+              </g>
+              <!-- fintech indonesia text -->
+              <text x="60" y="36" fill="#2BA4DB" font-size="18" font-family="Inter,sans-serif" font-weight="700" letter-spacing="-0.3">fintech</text>
+              <text x="60" y="56" fill="#2BA4DB" font-size="18" font-family="Inter,sans-serif" font-weight="700" letter-spacing="-0.3">indonesia</text>
+            </svg>
+          </div>
+          <p class="lic-caption">Indonesia Fintech Association</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="logo.png" alt="AirPay" class="logo-img footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="logo-svg-fallback">
+            <svg viewBox="0 0 44 44" fill="none" style="width:34px;height:34px">
+              <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+              <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+              <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+            </svg>
+            <span style="font-size:17px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Products</h4><ul><li><a href="#">Solutions for SME</a></li><li><a href="#">Solutions for Enterprise</a></li><li><a href="#">Payment Method Options</a></li><li><a href="#">Pricing</a></li></ul></div>
+        <div class="footer-col"><h4>About</h4><ul><li><a href="#">About AirPay</a></li><li><a href="#">Why AirPay</a></li><li><a href="license.html">License and Security Standard</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="#">FAQ</a></li><li><a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank">API Docs</a></li><li><a href="#">Terms and Conditions</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+        <div class="footer-col"><h4>Sales Inquiry</h4><ul><li><a href="#">Sales Inquiry Form</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="#">Register Form</a></li></ul></div>
+        <div class="footer-col"><h4>Contact Us</h4><ul>
+          <li><a href="mailto:contact@airpay.co.id" class="fc-row"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>contact@airpay.co.id</a></li>
+          <li><a href="tel:+622139500300" class="fc-row"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>62 21 3950 0300</a></li>
+          <li class="fc-row addr"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>Sopo Del Office Tower &amp; Lifestyle, Lantai 11, Jl. Mega Kuningan Barat III Lot 10.1-6, Jakarta</li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 AirPay. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
