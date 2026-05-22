@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AirPay — Payment Method Options" />
+  <title>AirPay — Payment Method Options</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="payment-methods.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="AirPay" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="logo-svg-fallback">
+          <svg viewBox="0 0 44 44" fill="none" style="width:38px;height:38px">
+            <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+            <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+            <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+          <span style="font-size:19px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+        </span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link active-nav">Products <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">Solutions for SME</a>
+            <a href="#">Solutions for Enterprise</a>
+            <a href="payment-methods.html" class="active-link">Payment Method Options</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">About <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">About AirPay</a>
+            <a href="#">Why AirPay</a>
+            <a href="license.html">License and Security Standard</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Pricing</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">Resources <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">FAQ</a>
+            <a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank" rel="noopener noreferrer">API Docs</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Sales Inquiry</a>
+      </div>
+
+      <div class="nav-actions" id="navActions">
+        <a href="#" class="btn-login">Log in</a>
+        <a href="https://shopeepay.co.id/merchant-demo" target="_blank" rel="noopener noreferrer" class="btn-demo">Demo Mode</a>
+        <a href="https://help.shopee.co.id/portal/survey/883dc85ec2584fb4941d2cc26aeb2e5a" target="_blank" rel="noopener noreferrer" class="btn-register">Register Now</a>
+        <div class="lang-selector">
+          <svg class="globe-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"/></svg>
+          <span>EN</span>
+          <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="pm-page-header">
+    <div class="pm-page-header-inner">
+      <h1>Payment Method Options</h1>
+      <p>Comprehensive payment solutions supporting all major Indonesian payment channels</p>
+    </div>
+  </section>
+
+  <!-- ===== PAYMENT CHANNELS ===== -->
+  <section class="pm-section">
+    <div class="pm-container">
+
+      <!-- Left intro -->
+      <div class="pm-intro">
+        <h2 class="pm-channels-title">Multiple Payment<br/>Channels</h2>
+        <p class="pm-channels-sub">Flexible Payment Options<br/>for Your Customers</p>
+        <p class="pm-channels-body">Give your customers the freedom to pay with their preferred method. AirPay supports the full spectrum of Indonesian payment channels — from QR codes to credit cards.</p>
+        <div class="pm-stat-row">
+          <div class="pm-stat">
+            <span class="pm-stat-num">5+</span>
+            <span class="pm-stat-label">Payment Types</span>
+          </div>
+          <div class="pm-stat">
+            <span class="pm-stat-num">100+</span>
+            <span class="pm-stat-label">Bank Partners</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: payment rows -->
+      <div class="pm-list">
+
+        <!-- QR Payment -->
+        <div class="pm-row">
+          <div class="pm-label">QR Payment</div>
+          <div class="pm-logo-box">
+            <svg viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="pm-logo-svg">
+              <!-- Top-left finder pattern -->
+              <rect x="1" y="1" width="19" height="19" rx="3" fill="none" stroke="#111827" stroke-width="2.5"/>
+              <rect x="6" y="6" width="9" height="9" rx="1" fill="#111827"/>
+              <!-- Top-right finder pattern -->
+              <rect x="23" y="1" width="19" height="19" rx="3" fill="none" stroke="#111827" stroke-width="2.5"/>
+              <rect x="28" y="6" width="9" height="9" rx="1" fill="#111827"/>
+              <!-- Bottom-left finder pattern -->
+              <rect x="1" y="30" width="19" height="19" rx="3" fill="none" stroke="#111827" stroke-width="2.5"/>
+              <rect x="6" y="35" width="9" height="9" rx="1" fill="#111827"/>
+              <!-- Data dots -->
+              <rect x="25" y="31" width="5" height="5" rx="1" fill="#111827"/>
+              <rect x="32" y="31" width="5" height="5" rx="1" fill="#111827"/>
+              <rect x="39" y="31" width="5" height="5" rx="1" fill="#111827"/>
+              <rect x="25" y="38" width="5" height="5" rx="1" fill="#111827"/>
+              <rect x="39" y="38" width="5" height="5" rx="1" fill="#111827"/>
+              <rect x="32" y="23" width="5" height="5" rx="1" fill="#111827"/>
+              <!-- Separator -->
+              <line x1="52" y1="5" x2="52" y2="45" stroke="#D1D5DB" stroke-width="1"/>
+              <!-- QRIS text -->
+              <text x="62" y="37" fill="#111827" font-size="26" font-family="Arial Black, Arial, sans-serif" font-weight="900" letter-spacing="2">QRIS</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Virtual Account -->
+        <div class="pm-row">
+          <div class="pm-label">Virtual Account</div>
+          <div class="pm-logo-box">
+            <span class="pm-va-text">Support all banks transaction</span>
+          </div>
+        </div>
+
+        <!-- E-Wallet -->
+        <div class="pm-row">
+          <div class="pm-label">E-Wallet</div>
+          <div class="pm-logo-box">
+            <svg viewBox="0 0 260 52" fill="none" xmlns="http://www.w3.org/2000/svg" class="pm-logo-svg">
+              <!-- Shopee bag handle -->
+              <path d="M15 18 Q24 7 33 18" stroke="#EE4D2D" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <!-- Bag body -->
+              <rect x="8" y="17" width="32" height="27" rx="6" fill="#EE4D2D"/>
+              <!-- S letter -->
+              <text x="24" y="37" text-anchor="middle" fill="white" font-size="15" font-family="Arial, sans-serif" font-weight="900">S</text>
+              <!-- Divider -->
+              <line x1="52" y1="6" x2="52" y2="46" stroke="#D1D5DB" stroke-width="1"/>
+              <!-- ShopeePay text -->
+              <text x="62" y="36" fill="#EE4D2D" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="700" letter-spacing="-0.3">ShopeePay</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- BNPL -->
+        <div class="pm-row">
+          <div class="pm-label">BNPL</div>
+          <div class="pm-logo-box">
+            <svg viewBox="0 0 260 52" fill="none" xmlns="http://www.w3.org/2000/svg" class="pm-logo-svg">
+              <!-- Coin icon -->
+              <circle cx="26" cy="26" r="22" fill="#FF5A00"/>
+              <circle cx="26" cy="26" r="17" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
+              <!-- SP text -->
+              <text x="26" y="31" text-anchor="middle" fill="white" font-size="13" font-family="Arial, sans-serif" font-weight="900">SP</text>
+              <!-- Divider -->
+              <line x1="60" y1="6" x2="60" y2="46" stroke="#D1D5DB" stroke-width="1"/>
+              <!-- SPayLater text -->
+              <text x="70" y="36" fill="#FF5A00" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="700" letter-spacing="-0.3">SPayLater</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Credit / Debit Card -->
+        <div class="pm-row">
+          <div class="pm-label">Credit / Debit Card</div>
+          <div class="pm-logo-box">
+            <!-- VISA -->
+            <svg viewBox="0 0 80 50" fill="none" class="pm-card-logo">
+              <rect width="80" height="50" rx="6" fill="#1A1F71"/>
+              <text x="40" y="35" text-anchor="middle" fill="white" font-size="26" font-family="Times New Roman, Georgia, serif" font-style="italic" font-weight="900" letter-spacing="1">VISA</text>
+            </svg>
+            <!-- Mastercard -->
+            <svg viewBox="0 0 100 56" fill="none" class="pm-card-logo">
+              <circle cx="34" cy="28" r="26" fill="#EB001B"/>
+              <circle cx="66" cy="28" r="26" fill="#F79E1B"/>
+              <path d="M50 7 Q61 17 61 28 Q61 39 50 49 Q39 39 39 28 Q39 17 50 7Z" fill="#FF5F00"/>
+              <text x="50" y="53" text-anchor="middle" fill="#555" font-size="9" font-family="Inter, Arial, sans-serif" font-weight="600" letter-spacing="0.3">mastercard</text>
+            </svg>
+            <!-- JCB -->
+            <svg viewBox="0 0 88 54" fill="none" class="pm-card-logo">
+              <rect x="1" y="1" width="24" height="52" rx="6" fill="#003087"/>
+              <rect x="32" y="1" width="24" height="52" rx="6" fill="#CC0000"/>
+              <rect x="63" y="1" width="24" height="52" rx="6" fill="#007B40"/>
+              <text x="13" y="33" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Arial, sans-serif">J</text>
+              <text x="44" y="33" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Arial, sans-serif">C</text>
+              <text x="75" y="33" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Arial, sans-serif">B</text>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="logo.png" alt="AirPay" class="logo-img footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="logo-svg-fallback">
+            <svg viewBox="0 0 44 44" fill="none" style="width:34px;height:34px">
+              <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+              <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+              <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+            </svg>
+            <span style="font-size:17px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Products</h4><ul><li><a href="#">Solutions for SME</a></li><li><a href="#">Solutions for Enterprise</a></li><li><a href="payment-methods.html">Payment Method Options</a></li><li><a href="#">Pricing</a></li></ul></div>
+        <div class="footer-col"><h4>About</h4><ul><li><a href="#">About AirPay</a></li><li><a href="#">Why AirPay</a></li><li><a href="license.html">License and Security Standard</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="#">FAQ</a></li><li><a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank">API Docs</a></li><li><a href="#">Terms and Conditions</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+        <div class="footer-col"><h4>Sales Inquiry</h4><ul><li><a href="#">Sales Inquiry Form</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="#">Register Form</a></li></ul></div>
+        <div class="footer-col"><h4>Contact Us</h4><ul>
+          <li><a href="mailto:contact@airpay.co.id" class="fc-row"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>contact@airpay.co.id</a></li>
+          <li><a href="tel:+622139500300" class="fc-row"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>62 21 3950 0300</a></li>
+          <li class="fc-row addr"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>Sopo Del Office Tower &amp; Lifestyle, Lantai 11, Jl. Mega Kuningan Barat III Lot 10.1-6, Jakarta</li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 AirPay. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

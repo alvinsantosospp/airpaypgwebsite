@@ -1,0 +1,120 @@
+/* ===== PAYMENT METHODS PAGE ===== */
+
+.pm-page-header {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  padding: 100px 24px 60px;
+  text-align: center;
+  border-bottom: 1px solid #BFDBFE;
+}
+.pm-page-header-inner { max-width: 720px; margin: 0 auto; }
+.pm-page-header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  color: #1E3A5F;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+.pm-page-header p { font-size: 1.05rem; color: #4B6A8A; margin: 0; }
+
+.pm-section { padding: 72px 24px 88px; background: #fff; }
+
+.pm-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 8fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Left intro */
+.pm-intro { position: sticky; top: 88px; }
+
+.pm-channels-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2196F3;
+  line-height: 1.15;
+  margin: 0 0 14px;
+  letter-spacing: -0.5px;
+}
+.pm-channels-sub {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+.pm-channels-body {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.7;
+  margin: 0 0 28px;
+}
+.pm-stat-row { display: flex; gap: 28px; }
+.pm-stat { display: flex; flex-direction: column; gap: 3px; }
+.pm-stat-num { font-size: 1.6rem; font-weight: 800; color: #1D4ED8; line-height: 1; }
+.pm-stat-label { font-size: 0.72rem; color: #9CA3AF; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Payment rows */
+.pm-list { display: flex; flex-direction: column; gap: 12px; }
+
+.pm-row {
+  display: flex;
+  align-items: stretch;
+  min-height: 74px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.pm-label {
+  background: #1D4ED8;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 152px;
+  width: 152px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  text-align: center;
+  line-height: 1.35;
+  flex-shrink: 0;
+}
+
+.pm-logo-box {
+  flex: 1;
+  background: white;
+  border: 1.5px solid #E5E7EB;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  padding: 14px 28px;
+  gap: 20px;
+}
+
+.pm-logo-svg { height: 38px; width: auto; display: block; }
+
+/* Virtual Account */
+.pm-va-text { font-size: 14px; color: #6B7280; font-weight: 500; }
+
+/* Card logos row */
+.pm-card-logo { height: 32px; width: auto; display: block; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pm-container { grid-template-columns: 1fr; gap: 40px; }
+  .pm-intro { position: static; }
+}
+
+@media (max-width: 540px) {
+  .pm-page-header { padding: 88px 20px 48px; }
+  .pm-section { padding: 48px 20px 60px; }
+  .pm-label { min-width: 120px; width: 120px; font-size: 11.5px; padding: 10px 10px; }
+  .pm-logo-box { padding: 12px 18px; }
+  .pm-channels-title { font-size: 1.7rem; }
+  .pm-card-logo { height: 26px; }
+  .pm-logo-svg { height: 30px; }
+}
