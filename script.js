@@ -59,7 +59,7 @@ window.addEventListener('resize', () => {
 });
 
 // Lead form → Google Sheets
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyKK-IK-wF1HsIbgcQNU6rJvOS3gVAIlgjLGOAWkpmrWq21GlCdXGdJU0BUlOh9ofPRmg/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxfmsUaueg6Jj-nZ2zZ9UQkr2fHtfkCE1B-gVyQTKEHzXY9uEFY3KK4L0URWGN0vocxMw/exec';
 
 const leadForm = document.getElementById('leadForm');
 if (leadForm) {
