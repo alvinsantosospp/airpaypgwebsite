@@ -59,7 +59,7 @@ window.addEventListener('resize', () => {
 });
 
 // Lead form → Google Sheets
-const APPS_SCRIPT_URL = 'https://script.google.com/a/macros/shopeepay.com/s/AKfycbwMSbTvZD1FtOTmOces7v1_9i1pdJ9jlWCbr2VpIGkdUiXIOAMWTHXyCadLw95dRDna/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby9V6ivqoMJ_JPNMmUO8Q-E07MsvJkIpbMB5LiVvObyCQ0WVlvPsCOsYQ9Vd7RiqNpGEw/exec';
 
 const leadForm = document.getElementById('leadForm');
 if (leadForm) {
