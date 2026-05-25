@@ -57,3 +57,51 @@ window.addEventListener('resize', () => {
     navbar.classList.remove('menu-open');
   }
 });
+
+// Lead form → Google Sheets
+const APPS_SCRIPT_URL = 'https://script.google.com/a/macros/shopeepay.com/s/AKfycbwMSbTvZD1FtOTmOces7v1_9i1pdJ9jlWCbr2VpIGkdUiXIOAMWTHXyCadLw95dRDna/exec';
+
+const leadForm = document.getElementById('leadForm');
+if (leadForm) {
+  leadForm.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    const btn     = leadForm.querySelector('.btn-submit');
+    const origTxt = btn.innerHTML;
+    btn.innerHTML = 'Sending…';
+    btn.disabled  = true;
+
+    const data = {
+      businessName: leadForm.querySelector('[name="businessName"]').value.trim(),
+      picName:      leadForm.querySelector('[name="picName"]').value.trim(),
+      phone:        '+62 ' + leadForm.querySelector('[name="phone"]').value.trim(),
+      email:        leadForm.querySelector('[name="email"]').value.trim(),
+      storeUrl:     'https://' + leadForm.querySelector('[name="storeUrl"]').value.trim(),
+      consent:      'Yes'
+    };
+
+    try {
+      await fetch(APPS_SCRIPT_URL, {
+        method:  'POST',
+        mode:    'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(data)
+      });
+
+      leadForm.innerHTML = `
+        <div style="text-align:center;padding:36px 0">
+          <svg viewBox="0 0 52 52" fill="none" style="width:60px;height:60px;margin:0 auto 18px;display:block">
+            <circle cx="26" cy="26" r="25" fill="#D1FAE5" stroke="#34D399" stroke-width="2"/>
+            <path d="M15 26l8 8 14-14" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3 style="font-size:1.2rem;font-weight:800;color:#111827;margin-bottom:10px">Thank you!</h3>
+          <p style="font-size:14px;color:#6B7280;line-height:1.6">We received your submission.<br>Our team will reach out within 2 business days.</p>
+        </div>`;
+
+    } catch (err) {
+      btn.innerHTML = origTxt;
+      btn.disabled  = false;
+      alert('Something went wrong. Please try again.');
+    }
+  });
+}
