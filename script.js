@@ -59,11 +59,11 @@ window.addEventListener('resize', () => {
 });
 
 // Lead form → Google Sheets
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxulMRI9iO-2-St6o-R0DcQdp1uRO8BFlzvT2eHG_Ufh0M1Sitdrirw0D_YbIyPzx_Tig/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyKK-IK-wF1HsIbgcQNU6rJvOS3gVAIlgjLGOAWkpmrWq21GlCdXGdJU0BUlOh9ofPRmg/exec';
 
 const leadForm = document.getElementById('leadForm');
 if (leadForm) {
-  leadForm.addEventListener('submit', async e => {
+  leadForm.addEventListener('submit', e => {
     e.preventDefault();
 
     const btn     = leadForm.querySelector('.btn-submit');
@@ -80,12 +80,9 @@ if (leadForm) {
       consent:      'Yes'
     });
 
-    try {
-      await fetch(APPS_SCRIPT_URL + '?' + params.toString(), {
-        method: 'GET',
-        mode:   'no-cors'
-      });
-
+    // Image trick — bypasses CORS entirely, no preflight
+    const img = new Image();
+    img.onload = img.onerror = () => {
       leadForm.innerHTML = `
         <div style="text-align:center;padding:36px 0">
           <svg viewBox="0 0 52 52" fill="none" style="width:60px;height:60px;margin:0 auto 18px;display:block">
@@ -95,11 +92,7 @@ if (leadForm) {
           <h3 style="font-size:1.2rem;font-weight:800;color:#111827;margin-bottom:10px">Thank you!</h3>
           <p style="font-size:14px;color:#6B7280;line-height:1.6">We received your submission.<br>Our team will reach out within 2 business days.</p>
         </div>`;
-
-    } catch (err) {
-      btn.innerHTML = origTxt;
-      btn.disabled  = false;
-      alert('Something went wrong. Please try again.');
-    }
+    };
+    img.src = APPS_SCRIPT_URL + '?' + params.toString();
   });
 }
