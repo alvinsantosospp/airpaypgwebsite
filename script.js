@@ -59,7 +59,7 @@ window.addEventListener('resize', () => {
 });
 
 // Lead form → Google Sheets
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby9V6ivqoMJ_JPNMmUO8Q-E07MsvJkIpbMB5LiVvObyCQ0WVlvPsCOsYQ9Vd7RiqNpGEw/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxulMRI9iO-2-St6o-R0DcQdp1uRO8BFlzvT2eHG_Ufh0M1Sitdrirw0D_YbIyPzx_Tig/exec';
 
 const leadForm = document.getElementById('leadForm');
 if (leadForm) {
@@ -71,21 +71,19 @@ if (leadForm) {
     btn.innerHTML = 'Sending…';
     btn.disabled  = true;
 
-    const data = {
+    const params = new URLSearchParams({
       businessName: leadForm.querySelector('[name="businessName"]').value.trim(),
       picName:      leadForm.querySelector('[name="picName"]').value.trim(),
       phone:        '+62 ' + leadForm.querySelector('[name="phone"]').value.trim(),
       email:        leadForm.querySelector('[name="email"]').value.trim(),
       storeUrl:     'https://' + leadForm.querySelector('[name="storeUrl"]').value.trim(),
       consent:      'Yes'
-    };
+    });
 
     try {
-      await fetch(APPS_SCRIPT_URL, {
-        method:  'POST',
-        mode:    'no-cors',
-        headers: { 'Content-Type': 'text/plain' },
-        body:    JSON.stringify(data)
+      await fetch(APPS_SCRIPT_URL + '?' + params.toString(), {
+        method: 'GET',
+        mode:   'no-cors'
       });
 
       leadForm.innerHTML = `
