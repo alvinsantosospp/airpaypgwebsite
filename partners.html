@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AirPay — AirPay Partners" />
+  <title>AirPay — Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="partners.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="AirPay" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="logo-svg-fallback">
+          <svg viewBox="0 0 44 44" fill="none" style="width:38px;height:38px">
+            <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+            <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+            <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+          <span style="font-size:19px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+        </span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">Products <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">Solutions for SME</a>
+            <a href="#">Solutions for Enterprise</a>
+            <a href="payment-methods.html">Payment Method Options</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link active-nav">About <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">About AirPay</a>
+            <a href="partners.html" class="active-link">AirPay Partners</a>
+            <a href="license.html">License and Security Standard</a>
+          </div>
+        </div>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link">Resources <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#">FAQ</a>
+            <a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank" rel="noopener noreferrer">API Docs</a>
+            <a href="https://shopeepay.co.id/terms" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link">Sales Inquiry</a>
+      </div>
+
+      <div class="nav-actions" id="navActions">
+        <a href="https://partner.business.accounts.shopee.co.id/authenticate/login/?lang=id&should_hide_back=true&state=https%3A%2F%2Fpartner.shopee.co.id%2F%3Fbusiness_next%3Dhttps%253A%252F%252Fpartner.shopee.co.id%252Flogin%252Fauth%26business_state%3Dhttps%253A%252F%252Fpartner.shopee.co.id%26business_client_id%3D1&client_id=5&next=https%3A%2F%2Fpartner.shopee.co.id%2Faccount%2Flogin%2Fauth" target="_blank" rel="noopener noreferrer" class="btn-login">Log in</a>
+        <a href="https://shopeepay.co.id/merchant-demo" target="_blank" rel="noopener noreferrer" class="btn-demo">Demo Mode</a>
+        <a href="https://help.shopee.co.id/portal/survey/883dc85ec2584fb4941d2cc26aeb2e5a" target="_blank" rel="noopener noreferrer" class="btn-register">Register Now</a>
+        <div class="lang-selector">
+          <svg class="globe-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"/></svg>
+          <span>EN</span>
+          <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="ptn-header">
+    <div class="ptn-header-inner">
+      <h1 class="ptn-title">AirPay, ShopeePay &amp; SPayLater Partners</h1>
+      <p class="ptn-subtitle">Trusted by leading partners across global, domestic, and public sector</p>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="ptn-section">
+    <div class="ptn-container">
+      <div class="ptn-outer">
+
+        <!-- LEFT: Global + Domestic -->
+        <div class="ptn-left">
+
+          <!-- GLOBAL -->
+          <div class="ptn-group">
+            <span class="ptn-lbl">Global</span>
+            <div class="ptn-box">
+              <div class="ptn-logos">
+
+                <!-- agoda -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 56" width="80">
+                    <text x="44" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#083C76">agoda</text>
+                    <circle cx="24" cy="46" r="5" fill="#FF5722"/>
+                    <circle cx="36" cy="46" r="5" fill="#FFA726"/>
+                    <circle cx="48" cy="46" r="5" fill="#29B6F6"/>
+                    <circle cx="60" cy="46" r="5" fill="#66BB6A"/>
+                  </svg>
+                </div>
+
+                <!-- Apple -->
+                <div class="lc">
+                  <svg viewBox="0 0 30 36" width="28" height="34" fill="#1D1D1F">
+                    <path d="M15 0.5 C17.5 0.5 19 2.3 18.5 4.8 Q16.2 3.8 15 2.2 Q13.8 3.8 11.5 4.8 C11 2.3 12.5 0.5 15 0.5Z"/>
+                    <path d="M19 6 C22.5 6 26 8.5 27.5 12.5 C29 17 28.5 23 26.5 28 C24.5 32.5 22.5 35.5 19.5 35.5 C17.8 35.5 16.3 34.5 15 34.5 C13.7 34.5 12.2 35.5 10.5 35.5 C7.5 35.5 5.5 32.5 3.5 28 C1.5 23 1 17 2.5 12.5 C4 8.5 7.5 6 11 6 C12.8 6 14.2 7 15.2 7 C16.2 7 17.2 6 19 6Z"/>
+                  </svg>
+                  <span style="font-size:10px;color:#9CA3AF;margin-top:2px">Apple</span>
+                </div>
+
+                <!-- Viu -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 44" width="72">
+                    <circle cx="20" cy="22" r="18" fill="#F9A825"/>
+                    <polygon points="14,14 14,30 28,22" fill="white"/>
+                    <text x="50" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#F9A825">viu</text>
+                  </svg>
+                </div>
+
+                <!-- Google Play -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="72">
+                    <defs>
+                      <linearGradient id="gp1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#EA4335"/><stop offset="100%" stop-color="#FBBC05"/></linearGradient>
+                      <linearGradient id="gp2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#34A853"/><stop offset="100%" stop-color="#4285F4"/></linearGradient>
+                    </defs>
+                    <polygon points="4,4 36,26 4,48" fill="url(#gp1)"/>
+                    <polygon points="36,26 4,4 40,10" fill="url(#gp2)"/>
+                    <text x="44" y="20" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#5F6368">Google</text>
+                    <text x="44" y="33" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#5F6368">Play</text>
+                  </svg>
+                </div>
+
+                <!-- Netflix -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 40" width="80">
+                    <text x="44" y="32" text-anchor="middle" font-family="'Arial Black',Impact,sans-serif" font-size="28" font-weight="900" fill="#E50914" font-style="italic">NETFLIX</text>
+                  </svg>
+                </div>
+
+                <!-- prime video -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 52" width="80">
+                    <text x="44" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#00A8E1">prime</text>
+                    <text x="44" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#232F3E">video</text>
+                    <path d="M24 46 Q44 50 64 46" stroke="#FF9900" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <polygon points="64,43 68,46 64,49" fill="#FF9900"/>
+                  </svg>
+                </div>
+
+                <!-- Spotify -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 52" width="80">
+                    <circle cx="22" cy="26" r="20" fill="#1DB954"/>
+                    <path d="M12 20 Q22 16 32 20" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <path d="M13 25 Q22 21.5 31 25" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M15 30 Q22 27 29 30" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                    <text x="58" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1DB954">Spotify</text>
+                  </svg>
+                </div>
+
+                <!-- Weverse -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 40" width="80">
+                    <text x="44" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#111827">weverse</text>
+                  </svg>
+                  <span style="font-size:9px;color:#9CA3AF;letter-spacing:0.3px;margin-top:-2px">Official Fan Platform</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- DOMESTIC -->
+          <div class="ptn-group">
+            <span class="ptn-lbl">Domestic</span>
+            <div class="ptn-box">
+              <div class="ptn-logos">
+
+                <!-- Alfagift -->
+                <div class="lc">
+                  <svg viewBox="0 0 44 44" width="38" height="38">
+                    <rect width="44" height="44" rx="10" fill="#EF4444"/>
+                    <rect x="14" y="18" width="16" height="14" rx="2" fill="white"/>
+                    <rect x="18" y="14" width="8" height="6" rx="2" fill="none" stroke="white" stroke-width="2"/>
+                    <line x1="22" y1="18" x2="22" y2="32" stroke="#EF4444" stroke-width="2"/>
+                    <line x1="14" y1="25" x2="30" y2="25" stroke="#EF4444" stroke-width="1.5"/>
+                  </svg>
+                  <span style="font-size:11px;font-weight:700;color:#1D1D1F;margin-top:3px">Alfagift</span>
+                </div>
+
+                <!-- AXIS -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 40" width="68">
+                    <text x="40" y="32" text-anchor="middle" font-family="'Arial Black',sans-serif" font-size="30" font-weight="900" fill="#7C3AED">AXIS</text>
+                  </svg>
+                </div>
+
+                <!-- bibit -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="70">
+                    <circle cx="26" cy="26" r="22" fill="#059669"/>
+                    <path d="M18 30 Q26 18 34 30" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <circle cx="26" cy="33" r="4" fill="white"/>
+                    <text x="57" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#059669">bibit</text>
+                  </svg>
+                </div>
+
+                <!-- bima+ -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="70">
+                    <ellipse cx="26" cy="36" rx="18" ry="6" fill="#1D1D1F"/>
+                    <path d="M8 36 Q26 10 44 36" fill="#1D1D1F"/>
+                    <path d="M20 36 Q26 20 32 36" fill="white" opacity="0.15"/>
+                    <text x="57" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#1D1D1F">bima+</text>
+                  </svg>
+                </div>
+
+                <!-- Jago Jawa (Jago Java) -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 48" width="80">
+                    <text x="44" y="22" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" font-style="italic" font-weight="700" fill="#92400E">Jago</text>
+                    <text x="44" y="40" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" font-style="italic" font-weight="700" fill="#92400E">Jawa</text>
+                  </svg>
+                </div>
+
+                <!-- FamilyMart -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 52" width="80">
+                    <rect x="4" y="8" width="80" height="10" rx="3" fill="#00A651"/>
+                    <rect x="4" y="21" width="80" height="10" rx="3" fill="#005BAA"/>
+                    <text x="44" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1D1D1F">FamilyMart</text>
+                  </svg>
+                </div>
+
+                <!-- KLiK (Indomaret) -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="70">
+                    <text x="40" y="30" text-anchor="middle" font-family="'Arial Black',sans-serif" font-size="28" font-weight="900" fill="#EF4444">KLiK</text>
+                    <text x="40" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#6B7280">Indomaret</text>
+                  </svg>
+                </div>
+
+                <!-- kopi kenangan -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 56" width="80">
+                    <text x="44" y="22" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-style="italic" fill="#92400E">kopi</text>
+                    <text x="44" y="36" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-style="italic" fill="#92400E">kenangan</text>
+                    <text x="44" y="52" text-anchor="middle" font-family="Arial" font-size="14" fill="#EF4444">♥</text>
+                  </svg>
+                </div>
+
+                <!-- MyBluebird -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 52" width="80">
+                    <path d="M22 34 Q14 24 18 16 Q24 8 30 14 Q38 8 34 22 Q40 20 38 28 Q34 36 28 34Z" fill="#1E40AF"/>
+                    <circle cx="17" cy="17" r="3" fill="white"/>
+                    <text x="58" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#1E40AF">My</text>
+                    <text x="58" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#1E40AF">Bluebird</text>
+                  </svg>
+                </div>
+
+                <!-- my im3 -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 52" width="80">
+                    <circle cx="26" cy="26" r="22" fill="#FBBF24"/>
+                    <text x="26" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#1D1D1F">my</text>
+                    <text x="26" y="36" text-anchor="middle" font-family="'Arial Black',sans-serif" font-size="13" font-weight="900" fill="#1D1D1F">im3</text>
+                    <text x="62" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#F97316">IM3</text>
+                  </svg>
+                </div>
+
+                <!-- Segari -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="70">
+                    <path d="M22 38 Q12 30 14 20 Q16 10 26 10 Q32 10 34 16 Q40 8 44 18 Q46 28 38 36Z" fill="#FB923C"/>
+                    <circle cx="22" cy="22" r="5" fill="#FDE68A"/>
+                    <text x="62" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#EA580C">Segari</text>
+                  </svg>
+                </div>
+
+                <!-- sociolla -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 40" width="80">
+                    <text x="44" y="30" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-style="italic" font-weight="700" fill="#DB2777">sociolla</text>
+                  </svg>
+                </div>
+
+                <!-- tiket.com -->
+                <div class="lc">
+                  <svg viewBox="0 0 88 44" width="80">
+                    <text x="44" y="24" text-anchor="middle" font-family="'Arial Black',sans-serif" font-size="17" font-weight="900" fill="#F97316">tiket</text>
+                    <circle cx="30" cy="34" r="5" fill="#F97316"/>
+                    <text x="52" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#6B7280">.com</text>
+                  </svg>
+                </div>
+
+                <!-- XL -->
+                <div class="lc">
+                  <svg viewBox="0 0 64 52" width="56">
+                    <text x="32" y="40" text-anchor="middle" font-family="'Arial Black',Impact,sans-serif" font-size="44" font-weight="900" fill="#1D4ED8">XL</text>
+                  </svg>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Gov / Public Sector -->
+        <div>
+          <div class="ptn-group">
+            <span class="ptn-lbl">Governmental Related / Public Sector</span>
+            <div class="ptn-box">
+              <div class="ptn-logos-3">
+
+                <!-- BPJS Ketenagakerjaan -->
+                <div class="lc">
+                  <svg viewBox="0 0 56 56" width="42" height="42">
+                    <path d="M28 4 L50 14 L50 28 Q50 44 28 52 Q6 44 6 28 L6 14 Z" fill="#16A34A"/>
+                    <text x="28" y="24" text-anchor="middle" font-family="'Arial Black',sans-serif" font-size="9" font-weight="900" fill="white">BPJS</text>
+                    <text x="28" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" font-weight="600" fill="white">Ketenaga</text>
+                    <text x="28" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" font-weight="600" fill="white">kerjaan</text>
+                  </svg>
+                </div>
+
+                <!-- Citilink -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 44" width="72">
+                    <path d="M6 22 Q20 6 40 8 Q56 10 62 22 Q56 34 40 36 Q20 38 6 22Z" fill="#0EA5E9" opacity="0.15"/>
+                    <text x="40" y="27" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#0284C7">Citilink</text>
+                  </svg>
+                </div>
+
+                <!-- Garuda Indonesia -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 56" width="72">
+                    <path d="M40 8 Q52 16 54 26 Q52 36 40 42 Q28 36 26 26 Q28 16 40 8Z" fill="#1E40AF" opacity="0.12"/>
+                    <text x="40" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1E40AF">Garuda</text>
+                    <text x="40" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1E40AF">Indonesia</text>
+                  </svg>
+                </div>
+
+                <!-- MyTelkomsel -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="72">
+                    <circle cx="22" cy="26" r="18" fill="#EF4444"/>
+                    <text x="22" y="23" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="white">My</text>
+                    <text x="22" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" font-weight="600" fill="white">Telkomsel</text>
+                    <text x="57" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#EF4444">My</text>
+                  </svg>
+                </div>
+
+                <!-- Pegadaian -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 48" width="72">
+                    <text x="40" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#16A34A">Pegadaian</text>
+                    <path d="M16 30 Q40 26 64 30" stroke="#16A34A" stroke-width="2" fill="none"/>
+                    <text x="40" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">Mengatasi Masalah</text>
+                  </svg>
+                </div>
+
+                <!-- PLN Mobile -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="72">
+                    <rect x="4" y="4" width="32" height="44" rx="6" fill="#1D4ED8"/>
+                    <text x="20" y="20" text-anchor="middle" font-family="'Arial Black',sans-serif" font-size="11" font-weight="900" fill="white">PLN</text>
+                    <path d="M14 24 L20 14 L26 24 L22 24 L22 34 L18 34 L18 24Z" fill="#FBBF24"/>
+                    <text x="55" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#1D4ED8">mobile</text>
+                  </svg>
+                </div>
+
+                <!-- Telkomsel Orbit -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="72">
+                    <ellipse cx="28" cy="26" rx="22" ry="14" stroke="#EF4444" stroke-width="2.5" fill="none"/>
+                    <ellipse cx="28" cy="26" rx="14" ry="22" stroke="#EF4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+                    <circle cx="28" cy="26" r="4" fill="#EF4444"/>
+                    <text x="28" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="700" fill="#EF4444">Telkomsel</text>
+                    <text x="64" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#EF4444">Orbit</text>
+                  </svg>
+                </div>
+
+                <!-- wifi.id -->
+                <div class="lc">
+                  <svg viewBox="0 0 80 52" width="72">
+                    <path d="M10 26 Q26 10 44 14" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.3"/>
+                    <path d="M16 30 Q28 18 44 22" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+                    <path d="M22 34 Q30 26 42 28" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <circle cx="32" cy="40" r="4" fill="#EF4444"/>
+                    <text x="58" y="24" text-anchor="middle" font-family="'Arial Black',sans-serif" font-size="11" font-weight="900" fill="#EF4444">wifi</text>
+                    <text x="58" y="37" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#6B7280">.id</text>
+                  </svg>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="logo.png" alt="AirPay" class="logo-img footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="logo-svg-fallback">
+            <svg viewBox="0 0 44 44" fill="none" style="width:34px;height:34px">
+              <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+              <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+              <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+            </svg>
+            <span style="font-size:17px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Products</h4><ul><li><a href="#">Solutions for SME</a></li><li><a href="#">Solutions for Enterprise</a></li><li><a href="payment-methods.html">Payment Method Options</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+        <div class="footer-col"><h4>About</h4><ul><li><a href="#">About AirPay</a></li><li><a href="partners.html" class="active-link">AirPay Partners</a></li><li><a href="license.html">License and Security Standard</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="#">FAQ</a></li><li><a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank">API Docs</a></li><li><a href="https://shopeepay.co.id/terms" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+        <div class="footer-col"><h4>Sales Inquiry</h4><ul><li><a href="#">Sales Inquiry Form</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="#">Register Form</a></li></ul></div>
+        <div class="footer-col"><h4>Contact Us</h4><ul>
+          <li><a href="mailto:contact@airpay.co.id" class="fc-row"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>contact@airpay.co.id</a></li>
+          <li><a href="tel:+622139500300" class="fc-row"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>62 21 3950 0300</a></li>
+          <li class="fc-row addr"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>Sopo Del Office Tower &amp; Lifestyle, Lantai 11, Jl. Mega Kuningan Barat III Lot 10.1-6, Jakarta</li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 AirPay. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

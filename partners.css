@@ -1,0 +1,120 @@
+/* ===== PARTNERS PAGE ===== */
+
+.ptn-header {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  padding: 100px 24px 60px;
+  text-align: center;
+  border-bottom: 1px solid #BFDBFE;
+}
+.ptn-header-inner { max-width: 900px; margin: 0 auto; }
+.ptn-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: #2196F3;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+.ptn-subtitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1E3A5F;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ptn-section {
+  padding: 64px 24px 88px;
+  background: #F8FAFC;
+}
+.ptn-container { max-width: 1240px; margin: 0 auto; }
+
+/* Two-column layout */
+.ptn-outer {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 28px;
+  align-items: start;
+}
+.ptn-left { display: flex; flex-direction: column; gap: 28px; }
+
+/* Section group: wrapper gives space for the floating label */
+.ptn-group { position: relative; padding-top: 14px; }
+
+.ptn-box {
+  border: 1.5px solid #E5E7EB;
+  border-radius: 20px;
+  padding: 22px 20px 20px;
+  background: white;
+}
+
+.ptn-lbl {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  background: #1D4ED8;
+  color: white;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 5px 18px;
+  border-radius: 50px;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+/* Logo flex row */
+.ptn-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+/* 3-column grid for Gov section */
+.ptn-logos-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 8px;
+}
+
+/* Logo card */
+.lc {
+  width: 108px;
+  height: 108px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border: 1px solid #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  gap: 4px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Gov cards fill grid cell width */
+.ptn-logos-3 .lc {
+  width: auto;
+  min-height: 100px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .ptn-outer { grid-template-columns: 1fr; }
+  .ptn-logos-3 { grid-template-columns: repeat(5, 1fr); }
+}
+@media (max-width: 768px) {
+  .ptn-header { padding: 88px 20px 48px; }
+  .ptn-section { padding: 48px 20px 60px; }
+  .lc { width: 88px; height: 88px; }
+  .ptn-logos-3 { grid-template-columns: repeat(3, 1fr); }
+  .ptn-subtitle { font-size: 0.95rem; }
+}
+@media (max-width: 480px) {
+  .lc { width: 76px; height: 76px; }
+  .ptn-title { font-size: 1.4rem; }
+}
