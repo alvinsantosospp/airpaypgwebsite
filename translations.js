@@ -80,7 +80,7 @@ window.TRANSLATIONS = {
     "pricing.table.channel": "Channel",
     "pricing.table.subchannel": "Sub-channel",
     "pricing.table.rate": "Pricing",
-    "pricing.table.settlement": "Settlement"
+    "pricing.table.settlement": "Settlement",
     "about.header.title": "About AirPay",
     "about.header.subtitle": "Southeast Asia's trusted payment gateway, part of Monee and backed by Sea Group",
     "about.intro.eyebrow": "About AirPay PG",
@@ -263,7 +263,7 @@ window.TRANSLATIONS = {
     "pricing.table.channel": "Kanal",
     "pricing.table.subchannel": "Sub-kanal",
     "pricing.table.rate": "Biaya",
-    "pricing.table.settlement": "Penyelesaian Dana"
+    "pricing.table.settlement": "Penyelesaian Dana",
     "about.header.title": "Tentang AirPay",
     "about.header.subtitle": "Payment gateway tepercaya di Asia Tenggara, bagian dari Monee dan didukung oleh Sea Group",
     "about.intro.eyebrow": "Tentang AirPay PG",
