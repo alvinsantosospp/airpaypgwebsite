@@ -64,14 +64,19 @@
 .cp-card {
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 28px 24px;
   box-shadow: var(--shadow-sm);
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.cp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 .cp-card-icon {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--blue-bg);
   color: var(--blue);
   display: flex;
@@ -86,7 +91,7 @@
 .cp-highlight-card {
   background: linear-gradient(135deg, #EFF6FF 0%, #F0F4FF 100%);
   border: 1px solid #BFDBFE;
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 36px 32px;
 }
 .cp-highlight-card .cp-badge {
@@ -162,8 +167,8 @@
   color: var(--blue);
   font-weight: 700;
   font-size: 0.95rem;
-  padding: 13px 26px;
-  border-radius: 10px;
+  padding: 14px 28px;
+  border-radius: 999px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -177,11 +182,13 @@
   color: var(--white);
   font-weight: 600;
   font-size: 0.95rem;
-  padding: 13px 26px;
-  border-radius: 10px;
+  padding: 14px 28px;
+  border-radius: 999px;
   display: inline-flex;
   align-items: center;
+  transition: transform 0.15s, background 0.2s;
 }
+.cp-cta .btn-cta-secondary:hover { transform: translateY(-1px); background: rgba(255,255,255,0.2); }
 
 .active-link { color: #2196F3 !important; font-weight: 600; }
 
