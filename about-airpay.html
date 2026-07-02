@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AirPay — About AirPay, Southeast Asia's trusted payment gateway, part of Monee and Sea Group" />
+  <title>AirPay — About AirPay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="content-page.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="AirPay" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="logo-svg-fallback">
+          <svg viewBox="0 0 44 44" fill="none" style="width:38px;height:38px">
+            <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+            <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+            <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+          <span style="font-size:19px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+        </span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link"><span data-i18n="nav.products">Products</span> <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="solutions-sme.html"><span data-i18n="nav.solutionsSme">Solutions for SME</span></a>
+            <a href="solutions-enterprise.html"><span data-i18n="nav.solutionsEnterprise">Solutions for Enterprise</span></a>
+            <a href="payment-methods.html"><span data-i18n="nav.paymentMethods">Payment Method Options</span></a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link active-nav"><span data-i18n="nav.about">About</span> <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="about-airpay.html" class="active-link"><span data-i18n="nav.aboutAirpay">About AirPay</span></a>
+            <a href="partners.html"><span data-i18n="nav.airpayPartners">AirPay Partners</span></a>
+            <a href="license.html"><span data-i18n="nav.licenseSecurity">License and Security Standard</span></a>
+          </div>
+        </div>
+        <a href="pricing.html" class="nav-link"><span data-i18n="nav.pricing">Pricing</span></a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link"><span data-i18n="nav.resources">Resources</span> <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="#"><span data-i18n="nav.faq">FAQ</span></a>
+            <a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.apiDocs">API Docs</span></a>
+            <a href="https://shopeepay.co.id/terms" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.terms">Terms and Conditions</span></a>
+            <a href="https://shopeepay.co.id/privacy" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.privacy">Privacy Policy</span></a>
+          </div>
+        </div>
+        <a href="https://help.shopee.co.id/portal/survey/45d63a38f236404bbe371f5e59797d23" target="_blank" rel="noopener noreferrer" class="nav-link"><span data-i18n="nav.salesInquiry">Sales Inquiry</span></a>
+      </div>
+
+      <div class="nav-actions" id="navActions">
+        <a href="https://help.shopee.co.id/portal/survey/883dc85ec2584fb4941d2cc26aeb2e5a" target="_blank" rel="noopener noreferrer" class="btn-register"><span data-i18n="nav.registerNow">Register Now</span></a>
+        <div class="lang-selector">
+          <svg class="globe-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"/></svg>
+          <span class="lang-label">EN</span>
+          <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg>
+          <div class="lang-menu">
+            <button type="button" class="lang-option" data-lang="en">
+              <span>English</span>
+              <svg class="lang-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            </button>
+            <button type="button" class="lang-option" data-lang="id">
+              <span>Bahasa Indonesia</span>
+              <svg class="lang-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="cp-header">
+    <div class="cp-header-inner">
+      <h1 data-i18n="about.header.title">About AirPay</h1>
+      <p data-i18n="about.header.subtitle">Southeast Asia's trusted payment gateway, part of Monee and backed by Sea Group</p>
+    </div>
+  </section>
+
+  <!-- ===== INTRO ===== -->
+  <section class="cp-section">
+    <div class="cp-container narrow">
+      <span class="cp-eyebrow" data-i18n="about.intro.eyebrow">About AirPay PG</span>
+      <p class="cp-lead" data-i18n="about.intro.p1">AirPay PG is a payment gateway solution launched in 2024 to help businesses accept payments across multiple channels, including QRIS, e-wallets, paylater, virtual accounts, direct debit and credit/debit cards.</p>
+      <p class="cp-lead" data-i18n="about.intro.p2">AirPay PG provides a single, seamless end-to-end payment integration, enabling merchants to access multiple payment services quickly and with minimal complexity.</p>
+      <p class="cp-lead" data-i18n="about.intro.p3">AirPay also provides a hosted payment page capability, allowing businesses to accept payments without the need to build and maintain their own.</p>
+      <p class="cp-lead" data-i18n="about.intro.p4">Backed by a fully licensed payment service provider operating across Southeast Asia, AirPay PG delivers trusted, compliant, and scalable payment solutions for businesses.</p>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="cp-section alt">
+    <div class="cp-container">
+      <div class="cp-section-head center">
+        <h2 class="cp-section-title" data-i18n="about.stats.title">Leading digital financial services in Southeast Asia</h2>
+      </div>
+      <div class="cp-stats">
+        <div class="cp-stat">
+          <div class="cp-stat-num">2024</div>
+          <div class="cp-stat-label" data-i18n="about.stats.launched">AirPay PG launched</div>
+        </div>
+        <div class="cp-stat">
+          <div class="cp-stat-num">6+</div>
+          <div class="cp-stat-label" data-i18n="about.stats.channels">Payment channels supported</div>
+        </div>
+        <div class="cp-stat">
+          <div class="cp-stat-num">US$3.5Bn+</div>
+          <div class="cp-stat-label" data-i18n="about.stats.credit">Sea Group credit portfolio (1H 2024)</div>
+        </div>
+        <div class="cp-stat">
+          <div class="cp-stat-num">1.3%</div>
+          <div class="cp-stat-label" data-i18n="about.stats.npl">NPL 90+ ratio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PART OF MONEE / SEA GROUP ===== -->
+  <section class="cp-section">
+    <div class="cp-container">
+      <div class="cp-section-head center">
+        <span class="cp-eyebrow" data-i18n="about.ecosystem.eyebrow">Our Ecosystem</span>
+        <h2 class="cp-section-title" data-i18n="about.ecosystem.title">AirPay is part of Monee, a one-stop financial ecosystem</h2>
+        <p class="cp-section-sub" data-i18n="about.ecosystem.subtitle">Monee is Sea Group's digital financial services arm — the same group behind Shopee and Garena — giving AirPay a pan-regional backbone, deep e-commerce integration, and a proven track record navigating licensing and regulation.</p>
+      </div>
+      <div class="cp-grid-4">
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.ecosystem.payment.title">Payment</h3>
+          <p class="cp-card-desc" data-i18n="about.ecosystem.payment.desc">AirPay and ShopeePay</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.ecosystem.financing.title">Financing</h3>
+          <p class="cp-card-desc" data-i18n="about.ecosystem.financing.desc">SPayLater, SPinjam, SPinjam untuk Penjual, and DanaCepat</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.ecosystem.bank.title">Digital Bank</h3>
+          <p class="cp-card-desc" data-i18n="about.ecosystem.bank.desc">SeaBank</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.ecosystem.insurance.title">Insurance</h3>
+          <p class="cp-card-desc" data-i18n="about.ecosystem.insurance.desc">moneeInsure</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MERCHANT ADVANTAGE ===== -->
+  <section class="cp-section alt">
+    <div class="cp-container">
+      <div class="cp-section-head center">
+        <span class="cp-eyebrow" data-i18n="about.advantage.eyebrow">Why AirPay</span>
+        <h2 class="cp-section-title" data-i18n="about.advantage.title">AirPay Merchant Advantage</h2>
+        <p class="cp-section-sub" data-i18n="about.advantage.subtitle">Simple setup, competitive pricing, and smoother payment operations</p>
+      </div>
+      <div class="cp-grid-4">
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M8 12l3 3 5-6"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.advantage.fees.title">Competitive Transaction Fees</h3>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.advantage.noFee.title">No Integration Fee</h3>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.advantage.hostedPage.title">Payment Page Managed by AirPay</h3>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-3.5-7.14M21 3v6h-6"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.advantage.refund.title">Automated Refund Process</h3>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.9l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.9-.3 1.7 1.7 0 00-1 1.6V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1-1.6 1.7 1.7 0 00-1.9.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.9 1.7 1.7 0 00-1.6-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.6-1 1.7 1.7 0 00-.3-1.9l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.9.3H9a1.7 1.7 0 001-1.6V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.6 1.7 1.7 0 001.9-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.9V9a1.7 1.7 0 001.6 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.6 1z"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.advantage.integration.title">Easy &amp; Seamless Integration</h3>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-7"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.advantage.dashboard.title">Real-Time Transaction Dashboard</h3>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4M2 11h20"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.advantage.settlement.title">Automated Payment Settlement</h3>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="about.advantage.cashflow.title">Keep your cash flow moving — settle in D+1</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cp-section">
+    <div class="cp-container narrow">
+      <div class="cp-cta">
+        <h2 data-i18n="about.cta.title">Ready to grow with AirPay?</h2>
+        <p data-i18n="about.cta.subtitle">Talk to our team or register your business to get started.</p>
+        <div class="cp-cta-actions">
+          <a href="https://help.shopee.co.id/portal/survey/45d63a38f236404bbe371f5e59797d23" target="_blank" rel="noopener noreferrer" class="btn-cta-primary">
+            <span data-i18n="nav.salesInquiry">Sales Inquiry</span>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="https://help.shopee.co.id/portal/survey/883dc85ec2584fb4941d2cc26aeb2e5a" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary"><span data-i18n="nav.registerNow">Register Now</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="logo.png" alt="AirPay" class="logo-img footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="logo-svg-fallback">
+            <svg viewBox="0 0 44 44" fill="none" style="width:34px;height:34px">
+              <circle cx="22" cy="22" r="22" fill="#2196F3"/>
+              <path d="M13 32L22 13L31 32H26.2L22 22.5L17.8 32H13Z" fill="white"/>
+              <path d="M18 17H24C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23H18V17Z" fill="rgba(255,255,255,0.5)"/>
+            </svg>
+            <span style="font-size:17px;font-weight:700;color:#2196F3;letter-spacing:-0.2px">AirPay</span>
+          </span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4><span data-i18n="nav.products">Products</span></h4><ul><li><a href="solutions-sme.html"><span data-i18n="nav.solutionsSme">Solutions for SME</span></a></li><li><a href="solutions-enterprise.html"><span data-i18n="nav.solutionsEnterprise">Solutions for Enterprise</span></a></li><li><a href="payment-methods.html"><span data-i18n="nav.paymentMethods">Payment Method Options</span></a></li><li><a href="pricing.html"><span data-i18n="nav.pricing">Pricing</span></a></li></ul></div>
+        <div class="footer-col"><h4><span data-i18n="nav.about">About</span></h4><ul><li><a href="about-airpay.html"><span data-i18n="nav.aboutAirpay">About AirPay</span></a></li><li><a href="#"><span data-i18n="footer.whyAirpay">Why AirPay</span></a></li><li><a href="license.html"><span data-i18n="nav.licenseSecurity">License and Security Standard</span></a></li></ul></div>
+        <div class="footer-col"><h4><span data-i18n="nav.resources">Resources</span></h4><ul><li><a href="#"><span data-i18n="nav.faq">FAQ</span></a></li><li><a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank"><span data-i18n="nav.apiDocs">API Docs</span></a></li><li><a href="https://shopeepay.co.id/terms" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.terms">Terms and Conditions</span></a></li><li><a href="https://shopeepay.co.id/privacy" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.privacy">Privacy Policy</span></a></li></ul></div>
+        <div class="footer-col"><h4><span data-i18n="nav.salesInquiry">Sales Inquiry</span></h4><ul><li><a href="https://help.shopee.co.id/portal/survey/45d63a38f236404bbe371f5e59797d23" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.salesInquiryForm">Sales Inquiry Form</span></a></li></ul></div>
+        <div class="footer-col"><h4><span data-i18n="footer.company">Company</span></h4><ul><li><a href="https://help.shopee.co.id/portal/survey/883dc85ec2584fb4941d2cc26aeb2e5a" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.registerForm">Register Form</span></a></li></ul></div>
+        <div class="footer-col"><h4><span data-i18n="footer.contactUs">Contact Us</span></h4><ul>
+          <li><a href="mailto:contact@airpay.co.id" class="fc-row"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>contact@airpay.co.id</a></li>
+          <li><a href="tel:+622139500300" class="fc-row"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>62 21 3950 0300</a></li>
+          <li class="fc-row addr"><svg class="fc-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>Sopo Del Office Tower &amp; Lifestyle, Lantai 11, Jl. Mega Kuningan Barat III Lot 10.1-6, Jakarta</li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p data-i18n="footer.copyright">© 2026 AirPay. All rights reserved.</p></div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

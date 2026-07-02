@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AirPay — Pricing" />
-  <title>AirPay — Pricing</title>
+  <meta name="description" content="AirPay — Payment gateway solutions built for growing small and medium businesses" />
+  <title>AirPay — Solutions for SME</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="pricing.css" />
+  <link rel="stylesheet" href="content-page.css" />
 </head>
 <body>
 
@@ -28,9 +28,9 @@
 
       <div class="nav-menu" id="navMenu">
         <div class="nav-item dropdown">
-          <a href="#" class="nav-link"><span data-i18n="nav.products">Products</span> <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+          <a href="#" class="nav-link active-nav"><span data-i18n="nav.products">Products</span> <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
           <div class="dropdown-menu">
-            <a href="solutions-sme.html"><span data-i18n="nav.solutionsSme">Solutions for SME</span></a>
+            <a href="solutions-sme.html" class="active-link"><span data-i18n="nav.solutionsSme">Solutions for SME</span></a>
             <a href="solutions-enterprise.html"><span data-i18n="nav.solutionsEnterprise">Solutions for Enterprise</span></a>
             <a href="payment-methods.html"><span data-i18n="nav.paymentMethods">Payment Method Options</span></a>
           </div>
@@ -43,7 +43,7 @@
             <a href="license.html"><span data-i18n="nav.licenseSecurity">License and Security Standard</span></a>
           </div>
         </div>
-        <a href="pricing.html" class="nav-link active-nav active-link"><span data-i18n="nav.pricing">Pricing</span></a>
+        <a href="pricing.html" class="nav-link"><span data-i18n="nav.pricing">Pricing</span></a>
         <div class="nav-item dropdown">
           <a href="#" class="nav-link"><span data-i18n="nav.resources">Resources</span> <svg class="chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
           <div class="dropdown-menu">
@@ -82,67 +82,120 @@
   </nav>
 
   <!-- ===== PAGE HEADER ===== -->
-  <section class="pricing-page-header">
-    <div class="pricing-page-header-inner">
-      <h1 class="pricing-page-title" data-i18n="pricing.header.title">Our Pricing</h1>
-      <p class="pricing-page-subtitle" data-i18n-html="pricing.header.subtitle">Competitive rates and clear settlement timelines<br>across key payment methods</p>
+  <section class="cp-header">
+    <div class="cp-header-inner">
+      <h1 data-i18n="sme.header.title">Solutions for SME</h1>
+      <p data-i18n="sme.header.subtitle">Fast, simple, and affordable payment tools built for growing small businesses</p>
     </div>
   </section>
 
-  <!-- ===== PRICING TABLE ===== -->
-  <section class="pricing-section">
-    <div class="pricing-container">
-      <div class="pricing-table-wrap">
-        <table class="pricing-table">
-          <thead>
-            <tr>
-              <th data-i18n="pricing.table.channel">Channel</th>
-              <th data-i18n="pricing.table.subchannel">Sub-channel</th>
-              <th class="th-center" data-i18n="pricing.table.rate">Pricing</th>
-              <th class="th-center" data-i18n="pricing.table.settlement">Settlement</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- E-Wallet + BNPL share same Pricing and Settlement (rowspan=2) -->
-            <tr class="row-gray">
-              <td class="td-channel">E-Wallet</td>
-              <td class="td-subchannel">ShopeePay<small>Include Direct Debit ***</small></td>
-              <td class="td-pricing" rowspan="2">2%**<small>(4% for Games &amp; digital product)</small></td>
-              <td class="td-settlement" rowspan="2">D+1<span>Calendar Days</span></td>
-            </tr>
-            <tr class="row-gray">
-              <td class="td-channel">BNPL / Paylater</td>
-              <td class="td-subchannel">SPayLater</td>
-            </tr>
-            <!-- Virtual Account -->
-            <tr class="row-white">
-              <td class="td-channel">Virtual Account</td>
-              <td class="td-subchannel">Seabank &amp; Other Bank</td>
-              <td class="td-pricing">Rp2.500*</td>
-              <td class="td-settlement">D+1<span>Calendar Days</span></td>
-            </tr>
-            <!-- Credit / Debit Card -->
-            <tr class="row-gray">
-              <td class="td-channel">Credit / Debit Card</td>
-              <td class="td-subchannel">Visa/Mastercard/JCB</td>
-              <td class="td-pricing">2.8%*</td>
-              <td class="td-settlement">D+1<span>Calendar Days</span></td>
-            </tr>
-            <!-- QR Payment -->
-            <tr class="row-white">
-              <td class="td-channel">QR Payment</td>
-              <td class="td-subchannel">QRIS</td>
-              <td class="td-pricing">0.7%**</td>
-              <td class="td-settlement">D+1<span>Calendar Days</span></td>
-            </tr>
-          </tbody>
-        </table>
+  <!-- ===== ALL-IN-ONE HIGHLIGHT ===== -->
+  <section class="cp-section">
+    <div class="cp-container narrow">
+      <div class="cp-highlight-card">
+        <span class="cp-badge" data-i18n="sme.highlight.badge">FAST &amp; SIMPLE SETUP</span>
+        <h3 data-i18n="sme.highlight.title">All-in-One Payment Solution</h3>
+        <p class="cp-highlight-tag" data-i18n="sme.highlight.tag">Everything you need to start accepting payments, in one integration</p>
+        <ul>
+          <li>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span data-i18n="sme.highlight.item1">Ready-to-use hosted payment page — no need to build your own checkout</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span data-i18n="sme.highlight.item2">Single integration unlocks every major payment method your customers use</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span data-i18n="sme.highlight.item3">Faster go-live with minimal development effort required from your team</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span data-i18n="sme.highlight.item4">Built for quick integration today, and scalable as your business grows</span>
+          </li>
+        </ul>
       </div>
+    </div>
+  </section>
 
-      <div class="pricing-footnotes">
-        <p>* excluding PPN 11%</p>
-        <p>** including PPN 11%</p>
-        <p>*** ShopeePay have multiple Source of Fund under it, including <strong>Direct Debit Seabank, CIMB &amp; BRI</strong></p>
+  <!-- ===== WHY SME CHOOSE AIRPAY ===== -->
+  <section class="cp-section alt">
+    <div class="cp-container">
+      <div class="cp-section-head center">
+        <span class="cp-eyebrow" data-i18n="sme.why.eyebrow">Built for small business</span>
+        <h2 class="cp-section-title" data-i18n="sme.why.title">Why small businesses choose AirPay</h2>
+        <p class="cp-section-sub" data-i18n="sme.why.subtitle">Low cost to start, nothing to maintain, and money in your account the next day.</p>
+      </div>
+      <div class="cp-grid-3">
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="sme.why.card1.title">No Integration Fee</h3>
+          <p class="cp-card-desc" data-i18n="sme.why.card1.desc">Start accepting payments without any upfront setup cost.</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="sme.why.card2.title">Competitive Transaction Fees</h3>
+          <p class="cp-card-desc" data-i18n="sme.why.card2.desc">Transparent, competitive rates that keep more revenue in your business.</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="sme.why.card3.title">Payment Page Managed by AirPay</h3>
+          <p class="cp-card-desc" data-i18n="sme.why.card3.desc">No development team needed — we host and maintain your checkout.</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4M2 11h20"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="sme.why.card4.title">Automated Payment Settlement</h3>
+          <p class="cp-card-desc" data-i18n="sme.why.card4.desc">Keep your cash flow moving with funds settled in D+1.</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-7"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="sme.why.card5.title">Real-Time Transaction Dashboard</h3>
+          <p class="cp-card-desc" data-i18n="sme.why.card5.desc">Track every sale as it happens, from any device.</p>
+        </div>
+        <div class="cp-card">
+          <div class="cp-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-3.5-7.14M21 3v6h-6"/></svg>
+          </div>
+          <h3 class="cp-card-title" data-i18n="sme.why.card6.title">Automated Refund Process</h3>
+          <p class="cp-card-desc" data-i18n="sme.why.card6.desc">Handle customer refunds without manual back-and-forth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PAYMENT CHANNELS ===== -->
+  <section class="cp-section">
+    <div class="cp-container narrow">
+      <div class="cp-section-head center">
+        <h2 class="cp-section-title" data-i18n="sme.channels.title">One integration, every payment method your customers already use</h2>
+        <p class="cp-section-sub" data-i18n="sme.channels.subtitle">QRIS, Virtual Account, ShopeePay, SPayLater, Credit/Debit Card, and SeaBank Direct Debit — all through a single AirPay integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cp-section alt">
+    <div class="cp-container narrow">
+      <div class="cp-cta">
+        <h2 data-i18n="sme.cta.title">Ready to start accepting payments?</h2>
+        <p data-i18n="sme.cta.subtitle">Get your business set up with AirPay in as little as a few days.</p>
+        <div class="cp-cta-actions">
+          <a href="https://help.shopee.co.id/portal/survey/45d63a38f236404bbe371f5e59797d23" target="_blank" rel="noopener noreferrer" class="btn-cta-primary">
+            <span data-i18n="nav.salesInquiry">Sales Inquiry</span>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="https://help.shopee.co.id/portal/survey/883dc85ec2584fb4941d2cc26aeb2e5a" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary"><span data-i18n="nav.registerNow">Register Now</span></a>
+        </div>
       </div>
     </div>
   </section>
@@ -165,7 +218,7 @@
         <p class="footer-tagline" data-i18n="footer.tagline">Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.</p>
       </div>
       <div class="footer-links">
-        <div class="footer-col"><h4><span data-i18n="nav.products">Products</span></h4><ul><li><a href="solutions-sme.html"><span data-i18n="nav.solutionsSme">Solutions for SME</span></a></li><li><a href="solutions-enterprise.html"><span data-i18n="nav.solutionsEnterprise">Solutions for Enterprise</span></a></li><li><a href="payment-methods.html"><span data-i18n="nav.paymentMethods">Payment Method Options</span></a></li><li><a href="pricing.html" class="active-link"><span data-i18n="nav.pricing">Pricing</span></a></li></ul></div>
+        <div class="footer-col"><h4><span data-i18n="nav.products">Products</span></h4><ul><li><a href="solutions-sme.html"><span data-i18n="nav.solutionsSme">Solutions for SME</span></a></li><li><a href="solutions-enterprise.html"><span data-i18n="nav.solutionsEnterprise">Solutions for Enterprise</span></a></li><li><a href="payment-methods.html"><span data-i18n="nav.paymentMethods">Payment Method Options</span></a></li><li><a href="pricing.html"><span data-i18n="nav.pricing">Pricing</span></a></li></ul></div>
         <div class="footer-col"><h4><span data-i18n="nav.about">About</span></h4><ul><li><a href="about-airpay.html"><span data-i18n="nav.aboutAirpay">About AirPay</span></a></li><li><a href="#"><span data-i18n="footer.whyAirpay">Why AirPay</span></a></li><li><a href="license.html"><span data-i18n="nav.licenseSecurity">License and Security Standard</span></a></li></ul></div>
         <div class="footer-col"><h4><span data-i18n="nav.resources">Resources</span></h4><ul><li><a href="#"><span data-i18n="nav.faq">FAQ</span></a></li><li><a href="https://product.shopeepay.co.id/integration/api/gateway/" target="_blank"><span data-i18n="nav.apiDocs">API Docs</span></a></li><li><a href="https://shopeepay.co.id/terms" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.terms">Terms and Conditions</span></a></li><li><a href="https://shopeepay.co.id/privacy" target="_blank" rel="noopener noreferrer"><span data-i18n="nav.privacy">Privacy Policy</span></a></li></ul></div>
         <div class="footer-col"><h4><span data-i18n="nav.salesInquiry">Sales Inquiry</span></h4><ul><li><a href="https://help.shopee.co.id/portal/survey/45d63a38f236404bbe371f5e59797d23" target="_blank" rel="noopener noreferrer"><span data-i18n="footer.salesInquiryForm">Sales Inquiry Form</span></a></li></ul></div>
@@ -179,7 +232,6 @@
     </div>
     <div class="footer-bottom"><p data-i18n="footer.copyright">© 2026 AirPay. All rights reserved.</p></div>
   </footer>
-
 
   <script src="translations.js"></script>
   <script src="i18n.js"></script>
