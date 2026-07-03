@@ -181,6 +181,12 @@ window.TRANSLATIONS = {
     "ent.ops.card3.desc": "A clear ~12-week path from commercial agreement to full launch, with pilot testing before go-live.",
     "ent.cta.title": "Ready to build with AirPay?",
     "ent.cta.subtitle": "Talk to our team about a custom integration for your business.",
+
+    "home.channels.cta": "View All Payment Methods",
+    "home.compliance.eyebrow": "Trust & Compliance",
+    "home.compliance.title": "Licensed, certified, and built for compliance",
+    "home.compliance.subtitle": "AirPay is backed by a fully licensed payment service provider — registered with Bank Indonesia and KOMDIGI, and certified to ISO 27001 and PCI DSS standards.",
+    "home.compliance.cta": "View All Certifications"
   },
   id: {
     "nav.products": "Produk",
@@ -364,5 +370,11 @@ window.TRANSLATIONS = {
     "ent.ops.card3.desc": "Alur yang jelas selama sekitar 12 minggu, dari perjanjian komersial hingga peluncuran penuh, dengan pilot testing sebelum go-live.",
     "ent.cta.title": "Siap membangun bersama AirPay?",
     "ent.cta.subtitle": "Diskusikan dengan tim kami tentang integrasi kustom untuk bisnis Anda.",
+
+    "home.channels.cta": "Lihat Semua Metode Pembayaran",
+    "home.compliance.eyebrow": "Kepercayaan & Kepatuhan",
+    "home.compliance.title": "Berlisensi, tersertifikasi, dan patuh regulasi",
+    "home.compliance.subtitle": "AirPay didukung oleh penyedia jasa pembayaran berlisensi penuh — terdaftar di Bank Indonesia dan KOMDIGI, serta tersertifikasi ISO 27001 dan PCI DSS.",
+    "home.compliance.cta": "Lihat Semua Sertifikasi"
   }
 };
