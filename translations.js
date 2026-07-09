@@ -17,7 +17,7 @@ window.TRANSLATIONS = {
     "nav.salesInquiry": "Sales Inquiry",
     "nav.registerNow": "Register Now",
 
-    "footer.tagline": "Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.",
+    "footer.tagline": "A secure, reliable, and easy-to-integrate payment gateway for businesses of all sizes in Indonesia.",
     "footer.whyAirpay": "Why AirPay",
     "footer.salesInquiryForm": "Sales Inquiry Form",
     "footer.company": "Company",
@@ -26,7 +26,7 @@ window.TRANSLATIONS = {
     "footer.copyright": "© 2026 AirPay. All rights reserved.",
 
     "hero.title": "Leading Digital Financial Services in Southeast Asia",
-    "hero.subtitle": "Secure, reliable, and easy-to-integrate payment solutions for businesses of all sizes.",
+    "hero.subtitle": "AirPay is a trusted payment gateway in Indonesia — secure, reliable, and easy to integrate for businesses of all sizes.",
 
     "features.secure.title": "Secure & Compliant",
     "features.secure.desc": "Industry-standard security and compliance",
@@ -62,7 +62,7 @@ window.TRANSLATIONS = {
     "partners.government.heading": "Governmental Related / Public Sector",
 
     "payment.header.title": "Payment Method Options",
-    "payment.header.subtitle": "Comprehensive payment solutions supporting all major Indonesian payment channels",
+    "payment.header.subtitle": "A comprehensive payment gateway supporting all major payment methods in Indonesia, from QRIS to virtual accounts and cards.",
     "payment.intro.title": "Multiple Payment<br/>Channels",
     "payment.intro.subtitle": "Flexible Payment Options<br/>for Your Customers",
     "payment.intro.body": "Give your customers the freedom to pay with their preferred method. AirPay supports the full spectrum of Indonesian payment channels — from QR codes to credit cards.",
@@ -118,7 +118,7 @@ window.TRANSLATIONS = {
     "about.cta.title": "Ready to grow with AirPay?",
     "about.cta.subtitle": "Talk to our team or register your business to get started.",
     "sme.header.title": "Solutions for SME",
-    "sme.header.subtitle": "Fast, simple, and affordable payment tools built for growing small businesses",
+    "sme.header.subtitle": "A fast, affordable payment gateway built for growing small businesses (UMKM) in Indonesia.",
     "sme.highlight.badge": "FAST & SIMPLE SETUP",
     "sme.highlight.title": "All-in-One Payment Solution",
     "sme.highlight.tag": "Everything you need to start accepting payments, in one integration",
@@ -146,7 +146,7 @@ window.TRANSLATIONS = {
     "sme.cta.title": "Ready to start accepting payments?",
     "sme.cta.subtitle": "Get your business set up with AirPay in as little as a few days.",
     "ent.header.title": "Solutions for Enterprise",
-    "ent.header.subtitle": "Flexible, fully customizable payment infrastructure for high-growth and complex businesses",
+    "ent.header.subtitle": "A flexible, fully customizable payment gateway infrastructure for high-growth enterprise businesses in Indonesia.",
     "ent.highlight.badge": "FLEXIBLE & ADVANCED SETUP",
     "ent.highlight.title": "Custom Integration",
     "ent.highlight.tag": "Build the exact payment experience your business needs",
@@ -206,7 +206,7 @@ window.TRANSLATIONS = {
     "nav.salesInquiry": "Hubungi Sales",
     "nav.registerNow": "Daftar Sekarang",
 
-    "footer.tagline": "Solusi pembayaran yang aman, andal, dan mudah diintegrasikan untuk bisnis dari segala skala.",
+    "footer.tagline": "Payment gateway yang aman, andal, dan mudah diintegrasikan untuk bisnis dari segala skala di Indonesia.",
     "footer.whyAirpay": "Kenapa AirPay",
     "footer.salesInquiryForm": "Formulir Hubungi Sales",
     "footer.company": "Perusahaan",
@@ -215,7 +215,7 @@ window.TRANSLATIONS = {
     "footer.copyright": "© 2026 AirPay. Seluruh hak cipta dilindungi.",
 
     "hero.title": "Layanan Keuangan Digital Terdepan di Asia Tenggara",
-    "hero.subtitle": "Solusi pembayaran yang aman, andal, dan mudah diintegrasikan untuk bisnis dari segala skala.",
+    "hero.subtitle": "AirPay adalah payment gateway terpercaya di Indonesia — aman, andal, dan mudah diintegrasikan untuk bisnis dari segala skala.",
 
     "features.secure.title": "Aman & Patuh Regulasi",
     "features.secure.desc": "Keamanan dan kepatuhan sesuai standar industri",
@@ -251,7 +251,7 @@ window.TRANSLATIONS = {
     "partners.government.heading": "Instansi Pemerintah / Sektor Publik",
 
     "payment.header.title": "Pilihan Metode Pembayaran",
-    "payment.header.subtitle": "Solusi pembayaran lengkap yang mendukung seluruh kanal pembayaran utama di Indonesia",
+    "payment.header.subtitle": "Payment gateway lengkap yang mendukung seluruh metode pembayaran utama di Indonesia, dari QRIS hingga virtual account dan kartu.",
     "payment.intro.title": "Beragam Kanal<br/>Pembayaran",
     "payment.intro.subtitle": "Opsi Pembayaran Fleksibel<br/>untuk Pelanggan Anda",
     "payment.intro.body": "Berikan pelanggan Anda kebebasan untuk membayar dengan metode favorit mereka. AirPay mendukung seluruh kanal pembayaran di Indonesia — mulai dari QR code hingga kartu kredit.",
@@ -307,7 +307,7 @@ window.TRANSLATIONS = {
     "about.cta.title": "Siap berkembang bersama AirPay?",
     "about.cta.subtitle": "Hubungi tim kami atau daftarkan bisnis Anda untuk memulai.",
     "sme.header.title": "Solusi untuk UKM",
-    "sme.header.subtitle": "Perangkat pembayaran yang cepat, sederhana, dan terjangkau, dirancang untuk bisnis kecil yang sedang berkembang",
+    "sme.header.subtitle": "Payment gateway yang cepat dan terjangkau, dirancang untuk bisnis kecil (UMKM) yang sedang berkembang di Indonesia.",
     "sme.highlight.badge": "PENGATURAN CEPAT & SEDERHANA",
     "sme.highlight.title": "Solusi Pembayaran All-in-One",
     "sme.highlight.tag": "Semua yang Anda butuhkan untuk mulai menerima pembayaran, dalam satu integrasi",
@@ -335,7 +335,7 @@ window.TRANSLATIONS = {
     "sme.cta.title": "Siap mulai menerima pembayaran?",
     "sme.cta.subtitle": "Siapkan bisnis Anda bersama AirPay hanya dalam hitungan hari.",
     "ent.header.title": "Solusi untuk Perusahaan",
-    "ent.header.subtitle": "Infrastruktur pembayaran yang fleksibel dan sepenuhnya dapat disesuaikan untuk bisnis dengan pertumbuhan tinggi dan kebutuhan kompleks",
+    "ent.header.subtitle": "Infrastruktur payment gateway yang fleksibel dan sepenuhnya dapat disesuaikan untuk bisnis enterprise dengan pertumbuhan tinggi di Indonesia.",
     "ent.highlight.badge": "PENGATURAN FLEKSIBEL & LANJUTAN",
     "ent.highlight.title": "Integrasi Kustom",
     "ent.highlight.tag": "Bangun pengalaman pembayaran yang sesuai persis dengan kebutuhan bisnis Anda",
