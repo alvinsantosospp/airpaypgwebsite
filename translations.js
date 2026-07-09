@@ -189,8 +189,8 @@ window.TRANSLATIONS = {
     "home.compliance.cta": "View All Certifications",
 
     "home.compare.eyebrow": "Choosing a Payment Gateway in Indonesia?",
-    "home.compare.title": "AirPay: a trusted payment gateway alternative to Midtrans, Xendit, and DOKU",
-    "home.compare.body": "Businesses researching Midtrans, Xendit, or DOKU for a payment gateway in Indonesia are usually looking for the same things: transparent pricing, fast integration, and a licensed provider they can trust. AirPay offers exactly that — backed by Sea Group and Monee, with no setup fee and no integration fee, supporting QRIS, e-wallets, virtual accounts, and cards through a single API."
+    "home.compare.title": "AirPay: a trusted payment gateway for businesses in Indonesia",
+    "home.compare.body": "Businesses comparing payment gateway providers in Indonesia are usually looking for the same things: transparent pricing, fast integration, and a licensed provider they can trust. AirPay offers exactly that — backed by Sea Group and Monee, with no setup fee and no integration fee, supporting QRIS, e-wallets, virtual accounts, and cards through a single API."
   },
   id: {
     "nav.products": "Produk",
@@ -382,7 +382,7 @@ window.TRANSLATIONS = {
     "home.compliance.cta": "Lihat Semua Sertifikasi",
 
     "home.compare.eyebrow": "Sedang Mencari Payment Gateway di Indonesia?",
-    "home.compare.title": "AirPay: Alternatif Payment Gateway Terpercaya Selain Midtrans, Xendit, dan DOKU",
-    "home.compare.body": "Bisnis yang membandingkan Midtrans, Xendit, atau DOKU untuk kebutuhan payment gateway di Indonesia biasanya mencari hal yang sama: biaya transparan, integrasi cepat, dan penyedia berlisensi yang dapat dipercaya. AirPay menghadirkan semua itu — didukung oleh Sea Group dan Monee, tanpa biaya setup dan tanpa biaya integrasi, serta mendukung QRIS, e-wallet, virtual account, dan kartu melalui satu API."
+    "home.compare.title": "AirPay: Payment Gateway Terpercaya untuk Bisnis di Indonesia",
+    "home.compare.body": "Bisnis yang membandingkan berbagai penyedia payment gateway di Indonesia biasanya mencari hal yang sama: biaya transparan, integrasi cepat, dan penyedia berlisensi yang dapat dipercaya. AirPay menghadirkan semua itu — didukung oleh Sea Group dan Monee, tanpa biaya setup dan tanpa biaya integrasi, serta mendukung QRIS, e-wallet, virtual account, dan kartu melalui satu API."
   }
 };
